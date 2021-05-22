@@ -1589,7 +1589,7 @@ Movie Card
   -o-transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   overflow: hidden;
-  height: 544px;
+  height: 610px;
   position: relative;
   margin-bottom: 2rem;
   max-width: 375px;
@@ -1663,14 +1663,19 @@ Movie Card
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--clr-primary-3);
-  font-size: 1.8rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.movie-description .underline {
+  margin: -3px auto 10px;
+  height: 3px;
 }
 
 .movie-card p {
-  line-height: 24px;
-  height: 70%;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--clr-primary-3);
+  letter-spacing: 0.12px;
 }
 
 .movie-card-btn {
