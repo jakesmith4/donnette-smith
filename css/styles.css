@@ -672,7 +672,8 @@ Books
 }
 
 .book-img-g {
-  background: url("../img/sprit-walker-min.jpg") no-repeat center/cover;
+  background: url("../img/killing-dreams-small-min.jpg") no-repeat 50% 12% /
+    cover;
   height: 380px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -944,7 +945,7 @@ Connect
 
 .connect-picture {
   background: url("../img/mailchip-img-min.jpg") no-repeat center/cover;
-  height: 475px;
+  height: 535px;
   -o-object-fit: cover;
   object-fit: cover;
   position: relative;
@@ -1131,7 +1132,8 @@ More Book Info
 }
 
 .card-side {
-  background: url("../img/sprit-walker-min.jpg") no-repeat center/cover;
+  background: url("../img/killing-dreams-small-min.jpg") no-repeat 50% 12% /
+    cover;
   height: 21rem;
   -o-object-fit: cover;
   object-fit: cover;
@@ -1595,10 +1597,10 @@ Movie Card
   -o-transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   overflow: hidden;
-  height: 650px;
+  height: 735px;
   position: relative;
   margin-bottom: 2rem;
-  max-width: 375px;
+  max-width: 425px;
   margin: 2rem auto;
   width: 100%;
 }
@@ -1682,11 +1684,12 @@ Movie Card
   font-size: 0.87rem;
   color: var(--clr-primary-3);
   letter-spacing: 0.12px;
+  margin-bottom: 5px;
+  text-indent: 20px;
 }
 
 .movie-card-btn {
   display: inline-block;
-  height: 40px;
   cursor: pointer;
   background-color: var(--clr-primary-3);
   color: var(--clr-white);
@@ -1698,7 +1701,7 @@ Movie Card
   padding: 5px;
   margin-bottom: 10px;
   text-transform: capitalize;
-  font-size: 1.2rem;
+  font-size: 1rem;
   outline: 2px solid transparent;
   outline-offset: 1px;
 }
@@ -2549,12 +2552,12 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/sprit-walker-min.jpg") no-repeat center/cover;
+    url("../img/killing-dreams-big-min.jpg") no-repeat 50% 80% / cover;
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/sprit-walker-min.jpg") no-repeat center/cover;
+    url("../img/killing-dreams-big-min.jpg") no-repeat 50% 80% / cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/sprit-walker-min.jpg") no-repeat center/cover;
-  height: 75vh;
+    url("../img/killing-dreams-big-min.jpg") no-repeat 50% 80% / cover;
+  height: 85vh;
 }
 
 .sprit-walker-hero h1 {
@@ -2577,8 +2580,9 @@ Release Info
 */
 
 .single-book-picture-b {
-  background: url("../img/sprit-walker-min.jpg");
-  height: 30rem;
+  background: url("../img/killing-dreams-small-min.jpg") no-repeat center/cover;
+  height: 50rem;
+  max-width: 500px;
   -o-object-fit: cover;
   object-fit: cover;
   background-position: 50% 80%;
@@ -2644,11 +2648,11 @@ Whole Series Section
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/sprit-walker-min.jpg") no-repeat center/cover;
+    url("../img/killing-dreams-small-min.jpg") no-repeat 50% 10% / cover;
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/sprit-walker-min.jpg") no-repeat center/cover;
+    url("../img/killing-dreams-small-min.jpg") no-repeat 50% 10% / cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/sprit-walker-min.jpg") no-repeat center/cover;
+    url("../img/killing-dreams-small-min.jpg") no-repeat 50% 10% / cover;
   height: 40rem;
   margin-bottom: 6rem;
   -webkit-box-shadow: 0 2rem 2rem var(--clr-primary-2);
