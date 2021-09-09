@@ -736,6 +736,9 @@ Books
   gap: 0 0.5rem;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .book-btn {
@@ -1595,7 +1598,7 @@ Movie Card
   -o-transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   overflow: hidden;
-  height: 735px;
+  height: 840px;
   position: relative;
   margin-bottom: 2rem;
   max-width: 425px;
@@ -1708,7 +1711,13 @@ Movie Card
   outline-color: var(--clr-primary-3);
 }
 
-@media screen and (min-width: 676px) {
+@media screen and (min-width: 365px) {
+  .movie-card .button-container {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 776px) {
   .movie-cards-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
