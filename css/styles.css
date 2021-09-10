@@ -1599,6 +1599,7 @@ Book Info
 
 .book-info-img img {
   height: 350px;
+  -o-object-fit: cover;
   object-fit: cover;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
@@ -1625,6 +1626,8 @@ Book Info
   .book-info-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
     column-gap: 2rem;
   }
   .book-info-card {
@@ -2156,6 +2159,42 @@ Hero
   padding: 0.3rem 1rem;
   max-width: 250px;
   font-size: 1.3rem;
+}
+
+/* 
+===============
+Blog Page
+Blog Intro
+===============
+*/
+.blog-intro-img img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 4px solid var(--clr-primary-2);
+}
+
+.blog-intro-info h3 {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.blog-intro-info .underline {
+  margin: 0 0 1.25rem 0;
+  height: 0.17rem;
+}
+
+.blog-intro-info p {
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 576px) {
+  .blog-intro-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+  }
 }
 
 /* 
