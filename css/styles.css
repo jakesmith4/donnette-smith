@@ -1074,7 +1074,7 @@ More Book Info
 }
 
 .card-info {
-  background: #000;
+  background: #222;
   height: 21rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1202,7 +1202,7 @@ Contact
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: #000;
+  background: #222;
   opacity: 0.9;
   width: 80%;
   height: 75%;
@@ -2117,107 +2117,6 @@ Newsletter Card
 }
 
 /* 
-===============
-Newsletter Page
-Popup
-===============
-*/
-.popup {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.popup:target {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-}
-
-.popup-content {
-  width: 75%;
-  background: var(--clr-white);
-  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 25rem;
-}
-
-.popup-left {
-  width: 33.333%;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 33.333%;
-  flex: 0 0 33.333%;
-}
-
-.popup-img {
-  background: url("../img/cunja-min.jpg") no-repeat center/cover;
-  background-position: 50% 80%;
-  height: 50%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-top-left-radius: var(--radius);
-  border-bottom-left-radius: var(--radius);
-}
-
-.popup-right {
-  width: 66.666;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 66.666%;
-  flex: 0 0 66.666%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.popup-close {
-  color: red;
-  font-size: 2.5rem;
-  position: absolute;
-  top: 0;
-  right: 10px;
-}
-
-.popup-right h3,
-.popup-right p {
-  text-align: center;
-}
-
-.popup-right p {
-  max-width: 25rem;
-  padding: 1rem;
-}
-
-/* 
 ==============
 Blog Page
 Hero
@@ -2716,7 +2615,7 @@ Whole Series Section
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: #000;
+  background: #222;
   opacity: 0.8;
   padding: 1rem;
   width: 90%;
