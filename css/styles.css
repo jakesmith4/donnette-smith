@@ -1592,6 +1592,9 @@ Book Info
 
 .book-info-card {
   margin-bottom: 2rem;
+  overflow: hidden;
+  border: solid var(--clr-primary-4);
+  border-radius: var(--radius);
 }
 
 .book-info-img img {
@@ -1603,16 +1606,14 @@ Book Info
 
 .book-info-box {
   padding: 1rem;
-  background: var(--clr-primary-5);
+  background: #cfd1cf;
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
+  min-height: 100%;
 }
 
 .book-info-heading-box {
   min-height: 125px;
-}
-
-.book-info-p-box {
 }
 
 .book-info-box p {
