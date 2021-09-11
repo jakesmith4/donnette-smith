@@ -11,6 +11,13 @@ window.addEventListener('scroll', function () {
     navbar.classList.remove('navbar-fixed');
   }
 });
+// Show Sidebar
+navBtn.addEventListener('click', function () {
+  sidebar.classList.add('show-sidebar');
+});
+closeBtn.addEventListener('click', function () {
+  sidebar.classList.remove('show-sidebar');
+});
 // Smooth Scoll
 const scrollLink = document.querySelector('.scroll-link');
 scrollLink.addEventListener('click', function (e) {
@@ -23,13 +30,6 @@ scrollLink.addEventListener('click', function (e) {
     left: 0,
     top: position - navHeight + 5,
   });
-});
-// Show Sidebar
-navBtn.addEventListener('click', function () {
-  sidebar.classList.add('show-sidebar');
-});
-closeBtn.addEventListener('click', function () {
-  sidebar.classList.remove('show-sidebar');
 });
 // Set Year
 date.innerHTML = new Date().getFullYear();
