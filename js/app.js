@@ -11,6 +11,19 @@ window.addEventListener('scroll', function () {
     navbar.classList.remove('navbar-fixed');
   }
 });
+// Smooth Scoll
+const scrollLink = document.querySelector('.scroll-link');
+scrollLink.addEventListener('click', function (e) {
+  e.preventDefault();
+  const id = e.currentTarget.getAttribute('href').slice(1);
+  const element = document.getElementById(id);
+  const navHeight = navbar.getBoundingClientRect().height;
+  let position = element.offsetTop;
+  window.scrollTo({
+    left: 0,
+    top: position - navHeight + 5,
+  });
+});
 // Show Sidebar
 navBtn.addEventListener('click', function () {
   sidebar.classList.add('show-sidebar');
