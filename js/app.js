@@ -20,35 +20,42 @@ closeBtn.addEventListener('click', function () {
 });
 // Smooth Scoll
 const scrollLink = document.querySelector('.scroll-link');
-scrollLink.addEventListener('click', function (e) {
-  e.preventDefault();
-  const id = e.currentTarget.getAttribute('href').slice(1);
-  const element = document.getElementById(id);
-  const navHeight = navbar.getBoundingClientRect().height;
-  let position = element.offsetTop;
-  window.scrollTo({
-    left: 0,
-    top: position - navHeight + 5,
+if (window.location.pathname === '/index.html') {
+  scrollLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    const id = e.currentTarget.getAttribute('href').slice(1);
+    const element = document.getElementById(id);
+    const navHeight = navbar.getBoundingClientRect().height;
+    let position = element.offsetTop;
+    window.scrollTo({
+      left: 0,
+      top: position - navHeight + 5,
+    });
   });
-});
+}
 // Set Year
 date.innerHTML = new Date().getFullYear();
 
 // MailChip
-(function ($) {
-  window.fnames = new Array();
-  window.ftypes = new Array();
-  fnames[0] = 'EMAIL';
-  ftypes[0] = 'email';
-  fnames[1] = 'FNAME';
-  ftypes[1] = 'text';
-  fnames[2] = 'LNAME';
-  ftypes[2] = 'text';
-  fnames[3] = 'ADDRESS';
-  ftypes[3] = 'address';
-  fnames[4] = 'PHONE';
-  ftypes[4] = 'phone';
-  fnames[5] = 'BIRTHDAY';
-  ftypes[5] = 'birthday';
-})(jQuery);
-var $mcj = jQuery.noConflict(true);
+if (
+  window.location.pathname === '/index.html' ||
+  window.location.pathname === '/newsletter.html'
+) {
+  (function ($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = 'EMAIL';
+    ftypes[0] = 'email';
+    fnames[1] = 'FNAME';
+    ftypes[1] = 'text';
+    fnames[2] = 'LNAME';
+    ftypes[2] = 'text';
+    fnames[3] = 'ADDRESS';
+    ftypes[3] = 'address';
+    fnames[4] = 'PHONE';
+    ftypes[4] = 'phone';
+    fnames[5] = 'BIRTHDAY';
+    ftypes[5] = 'birthday';
+  })(jQuery);
+  var $mcj = jQuery.noConflict(true);
+}
