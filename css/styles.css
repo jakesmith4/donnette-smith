@@ -362,10 +362,9 @@ Navbar
 }
 
 @media screen and (min-width: 576px) {
-  
-    .nav{
-      height: 5rem;
-    }
+  .nav {
+    height: 5rem;
+  }
 
   .nav-logo,
   .nav-btn {
@@ -574,6 +573,10 @@ Hero
   height: 100vh;
 }
 
+.hero-info {
+  margin-right: 2rem;
+}
+
 .hero h1 {
   color: var(--clr-white);
   font-style: italic;
@@ -614,7 +617,6 @@ Hero
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 0 2rem;
 }
 
 .hero-icons {
