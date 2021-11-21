@@ -1445,7 +1445,6 @@ Footer
 ===============
 */
 .footer {
-  height: 11rem;
   background: var(--clr-primary-1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1460,6 +1459,7 @@ Footer
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding: 2rem 1rem;
 }
 
 .footer .social-icon {
@@ -1471,14 +1471,22 @@ Footer
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 320px;
-  width: 353px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer-icons li {
+  margin-right: 0.5rem;
+}
+
+.footer-icons li a {
+  display: inline-block;
 }
 
 .footer-link {
@@ -1498,11 +1506,18 @@ Footer
 
 .footer p {
   margin-top: 1rem;
+  margin-bottom: 0;
   color: var(--clr-white);
   font-size: 1.25rem;
   letter-spacing: 2px;
   text-align: center;
   text-transform: capitalize;
+}
+
+@media screen and (min-width: 442px) {
+  .footer-icons {
+    width: 400px;
+  }
 }
 
 /*
@@ -2798,7 +2813,7 @@ Whole Series Section
   opacity: 0.8;
   padding: 1rem;
   width: 90%;
-  height: 70%;
+  /* height: 70%; */
 }
 
 .sprit-text h3 {
@@ -2948,6 +2963,10 @@ Buried Alive Single Page
   margin-bottom: 6rem;
   -webkit-box-shadow: 0 2rem 2rem var(--clr-primary-2);
   box-shadow: 0 2rem 2rem var(--clr-primary-2);
+}
+
+.box-date {
+  border-bottom: 1px solid var(--clr-white);
 }
 
 @media screen and (min-width: 576px) {
