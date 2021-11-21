@@ -281,7 +281,7 @@ Navbar
 }
 
 .nav {
-  height: 5rem;
+  height: 4rem;
   padding: 1rem;
   display: grid;
   -webkit-box-align: center;
@@ -321,25 +321,12 @@ Navbar
   font-style: italic;
   font-weight: bold;
   white-space: nowrap;
-  letter-spacing: 3.6px;
-  font-size: 2rem;
+  font-size: 1rem;
   letter-spacing: var(--spacing);
   text-transform: capitalize;
-  margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
   line-height: 1;
-}
-
-@media screen and (min-width: 880px) {
-  .nav-logo {
-    font-size: 2.2rem;
-  }
-}
-
-@media screen and (min-width: 950px) {
-  .nav-logo {
-    font-size: 2.5rem;
-  }
+  margin-bottom: 0.75rem;
 }
 
 .nav-logo span {
@@ -350,14 +337,40 @@ Navbar
   background: transparent;
   border-color: transparent;
   color: var(--clr-white);
-  font-size: 2rem;
+  font-size: 1rem;
   cursor: pointer;
   border: 2px solid transparent;
-  padding: 0.15rem 0;
+  padding: 0.3rem 0;
   border-color: var(--clr-white);
-  -ms-flex-item-align: baseline;
-  align-self: baseline;
   outline-color: var(--clr-white);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+@media screen and (min-width: 275px) {
+  .nav-logo,
+  .nav-btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 330px) {
+  .nav-logo,
+  .nav-btn {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  
+    .nav{
+      height: 5rem;
+    }
+
+  .nav-logo,
+  .nav-btn {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 880px) {
@@ -369,6 +382,10 @@ Navbar
     align-items: center;
   }
 
+  .nav-logo {
+    font-size: 2.2rem;
+  }
+
   .nav-btn {
     display: none;
   }
@@ -377,6 +394,7 @@ Navbar
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
+    align-self: center;
     -webkit-column-gap: 0.8rem;
     -moz-column-gap: 0.8rem;
     column-gap: 0.8rem;
@@ -520,6 +538,16 @@ Sidebar
   color: var(--clr-primary-2);
 }
 
+.aside-photo-container {
+  width: 80px;
+  margin: 0 auto 1rem;
+}
+
+.aside-photo {
+  border-radius: 50%;
+  border: 2px solid var(--clr-primary-2);
+}
+
 /*
 =============== 
 Hero
@@ -568,7 +596,11 @@ Hero
 }
 
 .hero img {
-  display: none;
+  border-radius: 50%;
+  border: 2px solid var(--clr-white);
+  max-width: 350px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .hero-center {
@@ -582,6 +614,7 @@ Hero
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 0 2rem;
 }
 
 .hero-icons {
@@ -598,17 +631,6 @@ Hero
   background: var(--clr-white);
   color: var(--clr-primary-2);
   border-color: var(--clr-primary-2);
-}
-
-@media screen and (min-width: 768px) {
-  .hero img {
-    display: block;
-    width: 350px;
-    border-radius: 50%;
-    border: 2px solid var(--clr-white);
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
 }
 
 /*
@@ -722,6 +744,22 @@ Books
   text-align: center;
   width: 260px;
   font-style: italic;
+}
+
+.sprit-walk-heading::before {
+  content: "sprit walkers series";
+  font-size: 1rem;
+  margin-right: 1rem;
+  color: var(--clr-primary-2);
+  white-space: nowrap;
+  display: block;
+}
+
+.sprit-walk-heading::after {
+  content: "Book 1";
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: var(--clr-primary-2);
 }
 
 .title-a {
@@ -1123,6 +1161,22 @@ More Book Info
   font-style: italic;
 }
 
+.walkers-title::before {
+  content: "sprit walkers series";
+  font-size: 0.8rem;
+  margin-right: 1rem;
+  color: var(--clr-primary-2);
+  white-space: nowrap;
+  display: block;
+}
+
+.walkers-title::after {
+  content: "Book 1";
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  color: var(--clr-primary-2);
+}
+
 .card-info .underline {
   background: var(--clr-white);
   margin-top: -0.5rem;
@@ -1173,6 +1227,31 @@ More Book Info
   margin: 0 auto 1rem;
 }
 
+.card-back {
+  background: url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat 50% 12% /
+    cover;
+  height: 21rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+}
+
+.buried-title::before {
+  content: "sprit walkers series";
+  font-size: 0.8rem;
+  margin-right: 1rem;
+  color: var(--clr-primary-2);
+  white-space: nowrap;
+  display: block;
+}
+
+.buried-title::after {
+  content: "Book 2";
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  color: var(--clr-primary-2);
+}
+
 @media screen and (min-width: 632px) {
   .card {
     display: grid;
@@ -1191,6 +1270,7 @@ More Book Info
 
   .card-front,
   .card-side,
+  .card-back,
   .card-info {
     height: 23rem;
   }
