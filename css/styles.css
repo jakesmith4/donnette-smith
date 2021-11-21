@@ -807,6 +807,10 @@ Books
   align-items: flex-start;
 }
 
+.button-container a {
+  margin-bottom: 1rem;
+}
+
 .book-btn {
   background: var(--clr-primary-1);
   color: var(--clr-white);
@@ -1725,6 +1729,22 @@ Book Info
   min-height: 125px;
 }
 
+.killing-dream-heading::before {
+  content: "sprit walkers series";
+  font-size: 1rem;
+  margin-right: 1rem;
+  color: var(--clr-primary-2);
+  white-space: nowrap;
+  display: block;
+}
+
+.killing-dream-heading::after {
+  content: "Book 1";
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: var(--clr-primary-2);
+}
+
 .book-info-box p {
   letter-spacing: 1px;
   max-width: 500px;
@@ -2637,7 +2657,7 @@ Reviews
 
 /* 
 ========================
-Sprit Walker Single Page
+Killing Dreams Page
 Hero
 ========================
 */
@@ -2665,6 +2685,12 @@ Hero
 .sprit-walker-hero h1 {
   color: var(--clr-white);
   font-style: italic;
+}
+
+.sprit-walker-hero h1::after {
+  content: "Book 1";
+  font-size: 1.3rem;
+  color: var(--clr-white);
 }
 
 .sprit-walker-hero h4 {
@@ -2847,4 +2873,58 @@ Whole Series Section
   .sprit-text {
     height: 90%;
   }
+}
+
+/* 
+=========================
+Buried Alive Single Page
+========================
+*/
+.buried-alive-hero .underline {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+
+.buried-alive-hero {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.3)),
+      to(rgba(0, 0, 0, 0.3))
+    ),
+    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat 50% 18% / cover;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat 50% 18% / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat 50% 18% / cover;
+  height: 85vh;
+}
+
+.buried-alive-hero h1 {
+  color: var(--clr-white);
+  font-style: italic;
+}
+
+.buried-alive-hero h1::after {
+  content: "Book 2";
+  font-size: 1.3rem;
+  color: var(--clr-white);
+}
+
+.buried-alive-hero h4 {
+  color: var(--clr-white);
+  background: var(--clr-primary-2);
+  padding: 0.3rem 1rem;
+  max-width: 300px;
+}
+
+.single-book-picture-c {
+  background: url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat center/cover;
+  height: 50rem;
+  max-width: 500px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-position: 50% 80%;
+  position: relative;
 }
