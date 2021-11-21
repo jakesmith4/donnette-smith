@@ -2928,3 +2928,30 @@ Buried Alive Single Page
   background-position: 50% 80%;
   position: relative;
 }
+
+.sprit-box-buried {
+  position: relative;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.3)),
+      to(rgba(0, 0, 0, 0.3))
+    ),
+    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat center/cover;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat center/cover;
+  background-position: 75% 50%;
+  height: 48rem;
+  margin-bottom: 6rem;
+  -webkit-box-shadow: 0 2rem 2rem var(--clr-primary-2);
+  box-shadow: 0 2rem 2rem var(--clr-primary-2);
+}
+
+@media screen and (min-width: 576px) {
+  .sprit-box-buried {
+    height: 42rem;
+  }
+}
