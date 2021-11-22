@@ -1693,18 +1693,12 @@ Hero
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/sunset-hero-min.jpg") no-repeat center/cover;
   background-position: 50% 90%;
-  height: 70vh;
+  height: 90vh;
 }
 
 .books-hero h1 {
   color: var(--clr-white);
   font-style: italic;
-}
-
-.book-span {
-  color: var(--clr-primary-2);
-  font-size: 1.2rem;
-  border-bottom: 1px solid var(--clr-white);
 }
 
 .books-hero h4 {
