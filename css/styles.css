@@ -704,7 +704,6 @@ Books
 */
 
 .book {
-  background: var(--clr-primary-2);
   background: #222;
   border-radius: 5px;
   max-width: 375px;
@@ -1702,6 +1701,12 @@ Hero
   font-style: italic;
 }
 
+.book-span {
+  color: var(--clr-primary-2);
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--clr-white);
+}
+
 .books-hero h4 {
   color: var(--clr-white);
   background: var(--clr-primary-2);
@@ -1718,18 +1723,51 @@ Book Info
 */
 
 .book-info-card {
-  margin-bottom: 2rem;
   overflow: hidden;
-  border: solid var(--clr-primary-4);
   border-radius: var(--radius);
+  max-width: 550px;
+  margin: 0 auto 2rem;
 }
 
 .book-info-img img {
-  height: 350px;
+  object-fit: cover;
+  border-bottom-left-radius: var(--radius);
+}
+
+@media screen and (min-width: 1000px) {
+  .book-info-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 650px;
+    max-width: 1170px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .book-info-card:nth-of-type(3) {
+    height: 750px;
+  }
+  .book-info-img {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+  }
+  .book-info-box {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+  }
+}
+
+.book-info-img {
+  background: var(--clr-primary-2);
+}
+
+.book-info-img img {
   -o-object-fit: cover;
   object-fit: cover;
   border-top-left-radius: var(--radius);
-  border-top-right-radius: var(--radius);
 }
 
 .book-info-box {
@@ -1738,10 +1776,6 @@ Book Info
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
   min-height: 100%;
-}
-
-.book-info-heading-box {
-  min-height: 125px;
 }
 
 .killing-dream-heading::before {
@@ -1765,17 +1799,20 @@ Book Info
   max-width: 500px;
 }
 
-@media screen and (min-width: 768px) {
-  .book-info-center {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
-  }
-  .book-info-card {
-    margin-bottom: 0;
-  }
+.buried-alive-heading::before {
+  content: "sprit walkers series";
+  font-size: 1rem;
+  margin-right: 1rem;
+  color: var(--clr-primary-2);
+  white-space: nowrap;
+  display: block;
+}
+
+.buried-alive-heading::after {
+  content: "Book 2";
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: var(--clr-primary-2);
 }
 
 /* 
@@ -2813,7 +2850,6 @@ Whole Series Section
   opacity: 0.8;
   padding: 1rem;
   width: 90%;
-  /* height: 70%; */
 }
 
 .sprit-text h3 {
