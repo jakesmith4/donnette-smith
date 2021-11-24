@@ -2724,10 +2724,6 @@ Reviews
   width: 40px;
 }
 
-.review-text h3 {
-  text-indent: 1rem;
-}
-
 .review-text p {
   max-width: 700px;
   margin: 0 auto;
