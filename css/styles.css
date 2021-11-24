@@ -2712,11 +2712,20 @@ Reviews
   text-align: center;
 }
 
+.star-container {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
 .review-text .underline {
   background: var(--clr-white);
   height: 3px;
   margin-bottom: 10px;
   width: 40px;
+}
+
+.review-text h3 {
+  text-indent: 1rem;
 }
 
 .review-text p {
@@ -2733,6 +2742,9 @@ Reviews
     -webkit-column-gap: 1.5rem;
     -moz-column-gap: 1.5rem;
     column-gap: 1.5rem;
+  }
+  .star-container {
+    margin-top: 0;
   }
 }
 
