@@ -257,6 +257,7 @@ Global Classes
 }
 
 .divider {
+  background: -o-linear-gradient(left, rgb(55, 114, 255), rgb(89, 205, 144));
   background: -webkit-gradient(
     linear,
     left top,
@@ -264,7 +265,6 @@ Global Classes
     from(rgb(55, 114, 255)),
     to(rgb(89, 205, 144))
   );
-  background: -o-linear-gradient(left, rgb(55, 114, 255), rgb(89, 205, 144));
   background: linear-gradient(to right, rgb(55, 114, 255), rgb(89, 205, 144));
   height: 8px;
 }
@@ -524,6 +524,8 @@ Sidebar
   width: 50px;
   border: 2px solid var(--clr-white);
   position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -532,6 +534,8 @@ Sidebar
   position: absolute;
   width: 100%;
   height: 100%;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
   z-index: 2;
   background: rgba(0, 0, 0, 0.25);
@@ -546,11 +550,16 @@ Sidebar
 }
 
 .aside-book {
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
 .current-book .aside-book {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -593,6 +602,8 @@ Hero
 }
 
 .hero {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/donnette-hero-min.jpg") no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -600,8 +611,6 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/donnette-hero-min.jpg") no-repeat center/cover;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/donnette-hero-min.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/donnette-hero-min.jpg") no-repeat center/cover;
@@ -656,6 +665,8 @@ Hero
 
 .hero-icons {
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1331,6 +1342,8 @@ Contact
 }
 
 .contact-picture {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/contact-min.jpg") no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -1338,8 +1351,6 @@ Contact
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/contact-min.jpg") no-repeat center/cover;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/contact-min.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/contact-min.jpg") no-repeat center/cover;
@@ -1571,6 +1582,8 @@ Hero
 }
 
 .about-hero {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/about-hero-min.jpg") no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -1578,8 +1591,6 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/about-hero-min.jpg") no-repeat center/cover;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/about-hero-min.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/about-hero-min.jpg") no-repeat center/cover;
@@ -1720,6 +1731,8 @@ Hero
 }
 
 .books-hero {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/sunset-hero-min.jpg") no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -1727,8 +1740,6 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/sunset-hero-min.jpg") no-repeat center/cover;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/sunset-hero-min.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/sunset-hero-min.jpg") no-repeat center/cover;
@@ -1764,6 +1775,7 @@ Book Info
 }
 
 .book-info-img img {
+  -o-object-fit: cover;
   object-fit: cover;
   border-bottom-left-radius: var(--radius);
 }
@@ -2041,6 +2053,8 @@ Hero
 }
 
 .newsletter-hero {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/newsletter-hero-a-min.jpg") no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2048,8 +2062,6 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/newsletter-hero-a-min.jpg") no-repeat center/cover;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/newsletter-hero-a-min.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/newsletter-hero-a-min.jpg") no-repeat center/cover;
@@ -2138,6 +2150,8 @@ Subsciribe Form
 ===============
 */
 .background-img {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/brick-wall-min.jpg") no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2145,8 +2159,6 @@ Subsciribe Form
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/brick-wall-min.jpg") no-repeat center/cover;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/brick-wall-min.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/brick-wall-min.jpg") no-repeat center/cover;
@@ -2382,6 +2394,8 @@ Hero
 }
 
 .blog-hero {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/couple-hero-min.jpg") no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2389,8 +2403,6 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/couple-hero-min.jpg") no-repeat center/cover;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/couple-hero-min.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/couple-hero-min.jpg") no-repeat center/cover;
@@ -2464,6 +2476,8 @@ Hero
 }
 
 .blog-post-hero {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/emotions-hero-min.jpg") no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2471,8 +2485,6 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/emotions-hero-min.jpg") no-repeat center/cover;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/emotions-hero-min.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/emotions-hero-min.jpg") no-repeat center/cover;
@@ -2595,6 +2607,8 @@ Hero
 }
 
 .cunja-page-hero {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/cunja-min.jpg") no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2602,8 +2616,6 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/cunja-min.jpg") no-repeat center/cover;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/cunja-min.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/cunja-min.jpg") no-repeat center/cover;
@@ -2805,6 +2817,8 @@ Hero
 }
 
 .sprit-walker-hero {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/killing-dreams-big-min.jpg") no-repeat 50% 80% / cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2812,8 +2826,6 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/killing-dreams-big-min.jpg") no-repeat 50% 80% / cover;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/killing-dreams-big-min.jpg") no-repeat 50% 80% / cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/killing-dreams-big-min.jpg") no-repeat 50% 80% / cover;
@@ -2907,6 +2919,8 @@ Whole Series Section
 */
 .sprit-box {
   position: relative;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/killing-dreams-small-min.jpg") no-repeat 50% 10% / cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2914,8 +2928,6 @@ Whole Series Section
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/killing-dreams-small-min.jpg") no-repeat 50% 10% / cover;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/killing-dreams-small-min.jpg") no-repeat 50% 10% / cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/killing-dreams-small-min.jpg") no-repeat 50% 10% / cover;
@@ -2957,6 +2969,8 @@ Whole Series Section
 
 .sprit-box-b {
   position: relative;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/question-mark-min.jpg") no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2964,8 +2978,6 @@ Whole Series Section
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/question-mark-min.jpg") no-repeat center/cover;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/question-mark-min.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/question-mark-min.jpg") no-repeat center/cover;
@@ -3023,6 +3035,8 @@ Buried Alive Single Page
 }
 
 .buried-alive-hero {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat 50% 18% / cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -3030,8 +3044,6 @@ Buried Alive Single Page
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat 50% 18% / cover;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat 50% 18% / cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat 50% 18% / cover;
@@ -3068,6 +3080,8 @@ Buried Alive Single Page
 
 .sprit-box-buried {
   position: relative;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -3075,8 +3089,6 @@ Buried Alive Single Page
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat center/cover;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat center/cover;
