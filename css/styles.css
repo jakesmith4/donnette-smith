@@ -656,6 +656,11 @@ Hero
 
 .hero-icons {
   margin-top: 1rem;
+  display: flex;
+}
+
+.hero-icons > * + * {
+  margin-left: 0.5rem;
 }
 
 .hero-icons a {
@@ -1859,7 +1864,7 @@ Movie Card
   -o-transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   overflow: hidden;
-  height: 840px;
+  height: 1000px;
   position: relative;
   margin-bottom: 2rem;
   max-width: 425px;
@@ -1950,7 +1955,7 @@ Movie Card
   text-indent: 20px;
 }
 
-.movie-card-btn {
+.button-container .movie-card-btn {
   display: inline-block;
   cursor: pointer;
   background-color: var(--clr-primary-3);
@@ -1961,7 +1966,7 @@ Movie Card
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   padding: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-transform: capitalize;
   font-size: 1rem;
   outline: 2px solid transparent;
@@ -1972,9 +1977,30 @@ Movie Card
   outline-color: var(--clr-primary-3);
 }
 
+@media screen and (min-width: 330px) {
+  .movie-card {
+    height: 950px;
+  }
+}
+
 @media screen and (min-width: 365px) {
   .movie-card .button-container {
     margin-top: 1rem;
+  }
+  .movie-card {
+    height: 840px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .movie-card {
+    height: 750px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .movie-card {
+    height: 660px;
   }
 }
 
@@ -1985,6 +2011,21 @@ Movie Card
     -webkit-column-gap: 2rem;
     -moz-column-gap: 2rem;
     column-gap: 2rem;
+  }
+  .movie-card {
+    height: 815px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .movie-card {
+    height: 700px;
+  }
+}
+
+@media screen and (min-width: 975px) {
+  .movie-card {
+    height: 650px;
   }
 }
 
