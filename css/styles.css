@@ -2716,6 +2716,10 @@ Reviews
   text-align: center;
 }
 
+.review-text h3 {
+  margin-left: 2rem;
+}
+
 .star-container {
   text-align: center;
   margin-top: 0.5rem;
