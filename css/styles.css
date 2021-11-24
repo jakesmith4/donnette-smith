@@ -2630,6 +2630,10 @@ Cunja Single Page
 Reviews
 =================
 */
+.reviews {
+  overflow: hidden;
+}
+
 .review-box {
   -webkit-box-shadow: 0 3rem 6rem var(--clr-primary-1);
   box-shadow: 0 3rem 6rem var(--clr-primary-1);
