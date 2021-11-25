@@ -1531,12 +1531,12 @@ Footer
   flex-wrap: wrap;
 }
 
-.footer-icons li {
-  margin-right: 0.5rem;
-}
-
 .footer-icons li a {
   display: inline-block;
+}
+
+.footer-icons li a:hover {
+  background: var(--clr-primary-2);
 }
 
 .footer-link {
