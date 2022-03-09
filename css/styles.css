@@ -1332,11 +1332,10 @@ More Book Info
   color: var(--clr-primary-2);
 }
 
-/* TAKE OUT LATER IF YOU REPLACE THE STOLEN CARD */
-
 .card-the-stolen {
-  background: #fff;
+  background: #222;
   height: 21rem;
+  -o-object-fit: cover;
   object-fit: cover;
   position: relative;
 }
@@ -1346,15 +1345,8 @@ More Book Info
   font-size: 1rem;
 }
 
-.stolen-new-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.small-text {
-  font-size: 0.9rem;
+.stolen-text {
+  font-size: 0.7rem;
 }
 
 @media screen and (min-width: 632px) {
@@ -1379,10 +1371,6 @@ More Book Info
   .card-the-stolen,
   .card-info {
     height: 23rem;
-  }
-
-  .no-underline {
-    display: none;
   }
 }
 
@@ -1798,7 +1786,7 @@ Hero
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('../img/sunset-hero-min.jpg') no-repeat center/cover;
   background-position: 50% 90%;
-  height: 90vh;
+  height: 95vh;
 }
 
 .books-hero h1 {
@@ -1812,6 +1800,42 @@ Hero
   padding: 0.3rem 1rem;
   max-width: 250px;
   font-size: 1.3rem;
+}
+
+.books-span {
+  min-height: 41px;
+  position: relative;
+}
+
+.span-img {
+  height: 100%;
+  width: 3rem;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media screen and (min-width: 650px) {
+  .books-hero-heading {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 3rem;
+  }
+  .books-hero-heading > div {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .books-hero-heading {
+    column-gap: 8rem;
+  }
+
+  .books-hero-heading > div {
+    margin-bottom: 2.5rem;
+  }
 }
 
 /* 

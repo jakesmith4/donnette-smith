@@ -7,14 +7,14 @@
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
+          dl = l != 'dataLayer' ? '&l=' + l : '';
         j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-N8JWWBH");
+      })(window, document, 'script', 'dataLayer', 'GTM-N8JWWBH');
     </script>
     <!-- End Google Tag Manager -->
     <!-- Font Awesome -->
@@ -165,14 +165,42 @@
     <header class="books-hero">
       <div class="section-center hero-center">
         <article class="hero-info">
-          <div class="underline"></div>
-          <h1>
-            Killing Dreams
-            <span class="hero-h1">sprit walkers series book 1</span>
-            buried alive
-            <span class="hero-h1">sprit walkers series book 2</span>
-            Cunja
-            <span class="hero-h1">romance/thriller</span>
+          <h1 class="books-hero-heading">
+            <div>
+              Killing Dreams
+              <span class="hero-h1 books-span"
+                >sprit walkers series book 1
+                <img
+                  src="./img/killing-dreams-small-min.jpg"
+                  class="span-img"
+                  alt="Killing Dreams"
+                />
+              </span>
+            </div>
+            <div>
+              buried alive
+              <span class="hero-h1 books-span"
+                >sprit walkers series book 2
+                <img
+                  src="./img/BuriedAlive_w16414_ib-min.jpg"
+                  class="span-img"
+                  alt="Buried Alive"
+                />
+              </span>
+            </div>
+            <div>
+              The Stolen
+              <span class="hero-h1 books-span"
+                >sprit walkers series book 3</span
+              >
+            </div>
+            <div>
+              Cunja
+              <span class="hero-h1 books-span"
+                >romance/thriller
+                <img src="./img/cunja-min.jpg" class="span-img" alt="Cunja" />
+              </span>
+            </div>
           </h1>
           <!-- Social Icons -->
           <ul class="social-icons hero-icons">
