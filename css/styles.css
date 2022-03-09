@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
 
 /*
 =============== 
@@ -35,8 +35,8 @@ Variables
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -168,7 +168,7 @@ Global Classes
 }
 
 .btn-border::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -530,7 +530,7 @@ Sidebar
 }
 
 .book-img-container::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -603,7 +603,7 @@ Hero
 
 .hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/donnette-hero-min.jpg") no-repeat center/cover;
+    url('../img/donnette-hero-min.jpg') no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -611,9 +611,9 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/donnette-hero-min.jpg") no-repeat center/cover;
+    url('../img/donnette-hero-min.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/donnette-hero-min.jpg") no-repeat center/cover;
+    url('../img/donnette-hero-min.jpg') no-repeat center/cover;
   height: 100vh;
 }
 
@@ -737,7 +737,7 @@ About
   }
 
   .about-img::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
@@ -762,7 +762,7 @@ Books
 }
 
 .book-img {
-  background: url("../img/cunja-min.jpg") no-repeat center/cover;
+  background: url('../img/cunja-min.jpg') no-repeat center/cover;
   background-position: 50% 70%;
   height: 380px;
   -o-object-fit: cover;
@@ -772,7 +772,18 @@ Books
 }
 
 .book-img-g {
-  background: url("../img/killing-dreams-small-min.jpg") no-repeat 50% 12% /
+  background: url('../img/killing-dreams-small-min.jpg') no-repeat 50% 12% /
+    cover;
+  height: 380px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+}
+
+.book-img-c {
+  background: url('../img/BuriedAlive_w16414_ib-min.jpg') no-repeat 50% 12% /
     cover;
   height: 380px;
   -o-object-fit: cover;
@@ -799,7 +810,7 @@ Books
 }
 
 .sprit-walk-heading::before {
-  content: "sprit walkers series";
+  content: 'sprit walkers series';
   font-size: 1rem;
   margin-right: 1rem;
   color: var(--clr-primary-2);
@@ -808,10 +819,17 @@ Books
 }
 
 .sprit-walk-heading::after {
-  content: "Book 1";
   font-size: 1rem;
   margin-left: 1rem;
   color: var(--clr-primary-2);
+}
+
+.killing-dreams-book-num::after {
+  content: 'Book 1';
+}
+
+.buried-alive-book-num::after {
+  content: 'Book 2';
 }
 
 .title-a {
@@ -908,6 +926,12 @@ Books
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .books-center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /*
 =============== 
 Blog
@@ -992,7 +1016,7 @@ Blog
 }
 
 .blog-post::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1039,7 +1063,7 @@ Connect
   position: relative;
   padding: 10rem 0 5rem;
   padding: 8rem 0;
-  background: url("../img/connect-banner-min.jpg") no-repeat center/cover;
+  background: url('../img/connect-banner-min.jpg') no-repeat center/cover;
 }
 
 .connect .section-title {
@@ -1065,7 +1089,7 @@ Connect
 }
 
 .connect-picture {
-  background: url("../img/mailchip-img-min.jpg") no-repeat center/cover;
+  background: url('../img/mailchip-img-min.jpg') no-repeat center/cover;
   height: 535px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -1185,8 +1209,8 @@ More Book Info
   margin-bottom: 2rem;
 }
 
-.card-front {
-  background: url("../img/cunja-min.jpg") no-repeat center/cover;
+.card-cunja {
+  background: url('../img/cunja-min.jpg') no-repeat center/cover;
   background-position: 50% 80%;
   height: 21rem;
   -o-object-fit: cover;
@@ -1218,7 +1242,7 @@ More Book Info
 }
 
 .walkers-title::before {
-  content: "sprit walkers series";
+  content: 'sprit walkers series';
   font-size: 0.8rem;
   margin-right: 1rem;
   color: var(--clr-primary-2);
@@ -1227,7 +1251,7 @@ More Book Info
 }
 
 .walkers-title::after {
-  content: "Book 1";
+  content: 'Book 1';
   font-size: 0.8rem;
   margin-left: 1rem;
   color: var(--clr-primary-2);
@@ -1268,8 +1292,8 @@ More Book Info
   outline-color: var(--clr-primary-3);
 }
 
-.card-side {
-  background: url("../img/killing-dreams-small-min.jpg") no-repeat 50% 12% /
+.card-killing-dreams {
+  background: url('../img/killing-dreams-small-min.jpg') no-repeat 50% 12% /
     cover;
   height: 21rem;
   -o-object-fit: cover;
@@ -1283,8 +1307,8 @@ More Book Info
   margin: 0 auto 1rem;
 }
 
-.card-back {
-  background: url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat 50% 12% /
+.card-buried-alive {
+  background: url('../img/BuriedAlive_w16414_ib-min.jpg') no-repeat 50% 12% /
     cover;
   height: 21rem;
   -o-object-fit: cover;
@@ -1292,8 +1316,8 @@ More Book Info
   position: relative;
 }
 
-.buried-title::before {
-  content: "sprit walkers series";
+.sprit-walker-title::before {
+  content: 'sprit walkers series';
   font-size: 0.8rem;
   margin-right: 1rem;
   color: var(--clr-primary-2);
@@ -1301,11 +1325,36 @@ More Book Info
   display: block;
 }
 
-.buried-title::after {
-  content: "Book 2";
+.sprit-walker-title::after {
+  content: 'Book 2';
   font-size: 0.8rem;
   margin-left: 1rem;
   color: var(--clr-primary-2);
+}
+
+/* TAKE OUT LATER IF YOU REPLACE THE STOLEN CARD */
+
+.card-the-stolen {
+  background: #fff;
+  height: 21rem;
+  object-fit: cover;
+  position: relative;
+}
+
+.stolen-title::after {
+  content: 'Book 3';
+  font-size: 1rem;
+}
+
+.stolen-new-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.small-text {
+  font-size: 0.9rem;
 }
 
 @media screen and (min-width: 632px) {
@@ -1324,11 +1373,16 @@ More Book Info
     column-gap: 2rem;
   }
 
-  .card-front,
-  .card-side,
-  .card-back,
+  .card-cunja,
+  .card-killing-dreams,
+  .card-buried-alive,
+  .card-the-stolen,
   .card-info {
     height: 23rem;
+  }
+
+  .no-underline {
+    display: none;
   }
 }
 
@@ -1343,7 +1397,7 @@ Contact
 
 .contact-picture {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/contact-min.jpg") no-repeat center/cover;
+    url('../img/contact-min.jpg') no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -1351,9 +1405,9 @@ Contact
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/contact-min.jpg") no-repeat center/cover;
+    url('../img/contact-min.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/contact-min.jpg") no-repeat center/cover;
+    url('../img/contact-min.jpg') no-repeat center/cover;
   height: 24rem;
 }
 
@@ -1583,7 +1637,7 @@ Hero
 
 .about-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/about-hero-min.jpg") no-repeat center/cover;
+    url('../img/about-hero-min.jpg') no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -1591,9 +1645,9 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/about-hero-min.jpg") no-repeat center/cover;
+    url('../img/about-hero-min.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/about-hero-min.jpg") no-repeat center/cover;
+    url('../img/about-hero-min.jpg') no-repeat center/cover;
   height: 70vh;
   background-position: 50% 60%;
 }
@@ -1628,7 +1682,7 @@ About Donnette
 
 @media screen and (min-width: 776px) {
   .about-photo-container::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
@@ -1653,14 +1707,14 @@ Donnette Card
       rgba(255, 255, 255, 0.8) 30%,
       transparent 50%
     ),
-    url("../img/donnette-6-min.jpg") no-repeat center/cover;
+    url('../img/donnette-6-min.jpg') no-repeat center/cover;
   background: linear-gradient(
       101deg,
       rgba(255, 255, 255, 0.8) 0%,
       rgba(255, 255, 255, 0.8) 30%,
       transparent 50%
     ),
-    url("../img/donnette-6-min.jpg") no-repeat center/cover;
+    url('../img/donnette-6-min.jpg') no-repeat center/cover;
   background-position-y: 20%;
   height: 30rem;
   border-radius: var(--radius);
@@ -1732,7 +1786,7 @@ Hero
 
 .books-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/sunset-hero-min.jpg") no-repeat center/cover;
+    url('../img/sunset-hero-min.jpg') no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -1740,9 +1794,9 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/sunset-hero-min.jpg") no-repeat center/cover;
+    url('../img/sunset-hero-min.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/sunset-hero-min.jpg") no-repeat center/cover;
+    url('../img/sunset-hero-min.jpg') no-repeat center/cover;
   background-position: 50% 90%;
   height: 90vh;
 }
@@ -1825,7 +1879,7 @@ Book Info
 }
 
 .killing-dream-heading::before {
-  content: "sprit walkers series";
+  content: 'sprit walkers series';
   font-size: 1rem;
   margin-right: 1rem;
   color: var(--clr-primary-2);
@@ -1834,7 +1888,7 @@ Book Info
 }
 
 .killing-dream-heading::after {
-  content: "Book 1";
+  content: 'Book 1';
   font-size: 1rem;
   margin-left: 1rem;
   color: var(--clr-primary-2);
@@ -1846,7 +1900,7 @@ Book Info
 }
 
 .buried-alive-heading::before {
-  content: "sprit walkers series";
+  content: 'sprit walkers series';
   font-size: 1rem;
   margin-right: 1rem;
   color: var(--clr-primary-2);
@@ -1855,7 +1909,7 @@ Book Info
 }
 
 .buried-alive-heading::after {
-  content: "Book 2";
+  content: 'Book 2';
   font-size: 1rem;
   margin-left: 1rem;
   color: var(--clr-primary-2);
@@ -2054,7 +2108,7 @@ Hero
 
 .newsletter-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/newsletter-hero-a-min.jpg") no-repeat center/cover;
+    url('../img/newsletter-hero-a-min.jpg') no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2062,9 +2116,9 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/newsletter-hero-a-min.jpg") no-repeat center/cover;
+    url('../img/newsletter-hero-a-min.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/newsletter-hero-a-min.jpg") no-repeat center/cover;
+    url('../img/newsletter-hero-a-min.jpg') no-repeat center/cover;
   height: 70vh;
   background-position: 50% 60%;
 }
@@ -2151,7 +2205,7 @@ Subsciribe Form
 */
 .background-img {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/brick-wall-min.jpg") no-repeat center/cover;
+    url('../img/brick-wall-min.jpg') no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2159,9 +2213,9 @@ Subsciribe Form
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/brick-wall-min.jpg") no-repeat center/cover;
+    url('../img/brick-wall-min.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/brick-wall-min.jpg") no-repeat center/cover;
+    url('../img/brick-wall-min.jpg') no-repeat center/cover;
 }
 
 .newsletter-connect-center {
@@ -2181,7 +2235,7 @@ Subsciribe Form
 }
 
 .newsletter-img {
-  background: url("../img/newsletter-form-bg-min.jpg") no-repeat center/cover;
+  background: url('../img/newsletter-form-bg-min.jpg') no-repeat center/cover;
   height: 475px;
   position: relative;
   opacity: 0.8;
@@ -2319,14 +2373,14 @@ Newsletter Card
       rgba(255, 255, 255, 0.8) 50%,
       transparent 50%
     ),
-    url("../img/pair-bg-min.png") no-repeat center/cover;
+    url('../img/pair-bg-min.png') no-repeat center/cover;
   background: linear-gradient(
       101deg,
       rgba(255, 255, 255, 0.8) 0%,
       rgba(255, 255, 255, 0.8) 50%,
       transparent 50%
     ),
-    url("../img/pair-bg-min.png") no-repeat center/cover;
+    url('../img/pair-bg-min.png') no-repeat center/cover;
   height: 30rem;
   background-position: 70% bottom;
   border-radius: var(--radius);
@@ -2395,7 +2449,7 @@ Hero
 
 .blog-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/couple-hero-min.jpg") no-repeat center/cover;
+    url('../img/couple-hero-min.jpg') no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2403,9 +2457,9 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/couple-hero-min.jpg") no-repeat center/cover;
+    url('../img/couple-hero-min.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/couple-hero-min.jpg") no-repeat center/cover;
+    url('../img/couple-hero-min.jpg') no-repeat center/cover;
   height: 70vh;
   background-position: 50% 40%;
 }
@@ -2477,7 +2531,7 @@ Hero
 
 .blog-post-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/emotions-hero-min.jpg") no-repeat center/cover;
+    url('../img/emotions-hero-min.jpg') no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2485,9 +2539,9 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/emotions-hero-min.jpg") no-repeat center/cover;
+    url('../img/emotions-hero-min.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/emotions-hero-min.jpg") no-repeat center/cover;
+    url('../img/emotions-hero-min.jpg') no-repeat center/cover;
   background-position: 50% 70%;
   height: 75vh;
 }
@@ -2608,7 +2662,7 @@ Hero
 
 .cunja-page-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/cunja-min.jpg") no-repeat center/cover;
+    url('../img/cunja-min.jpg') no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2616,9 +2670,9 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/cunja-min.jpg") no-repeat center/cover;
+    url('../img/cunja-min.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/cunja-min.jpg") no-repeat center/cover;
+    url('../img/cunja-min.jpg') no-repeat center/cover;
   height: 80vh;
   background-position: 50% 95%;
 }
@@ -2637,7 +2691,7 @@ Hero
 }
 
 .single-book-picture {
-  background: url("../img/cunja-min.jpg") no-repeat center/cover;
+  background: url('../img/cunja-min.jpg') no-repeat center/cover;
   height: 30rem;
   -o-object-fit: cover;
   object-fit: cover;
@@ -2818,7 +2872,7 @@ Hero
 
 .sprit-walker-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/killing-dreams-big-min.jpg") no-repeat 50% 80% / cover;
+    url('../img/killing-dreams-big-min.jpg') no-repeat 50% 80% / cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2826,9 +2880,9 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/killing-dreams-big-min.jpg") no-repeat 50% 80% / cover;
+    url('../img/killing-dreams-big-min.jpg') no-repeat 50% 80% / cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/killing-dreams-big-min.jpg") no-repeat 50% 80% / cover;
+    url('../img/killing-dreams-big-min.jpg') no-repeat 50% 80% / cover;
   height: 85vh;
 }
 
@@ -2838,7 +2892,7 @@ Hero
 }
 
 .sprit-walker-hero h1::after {
-  content: "Book 1";
+  content: 'Book 1';
   font-size: 1.3rem;
   color: var(--clr-white);
 }
@@ -2858,7 +2912,7 @@ Release Info
 */
 
 .single-book-picture-b {
-  background: url("../img/killing-dreams-small-min.jpg") no-repeat center/cover;
+  background: url('../img/killing-dreams-small-min.jpg') no-repeat center/cover;
   height: 50rem;
   max-width: 500px;
   -o-object-fit: cover;
@@ -2920,7 +2974,7 @@ Whole Series Section
 .sprit-box {
   position: relative;
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/killing-dreams-small-min.jpg") no-repeat 50% 10% / cover;
+    url('../img/killing-dreams-small-min.jpg') no-repeat 50% 10% / cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2928,9 +2982,9 @@ Whole Series Section
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/killing-dreams-small-min.jpg") no-repeat 50% 10% / cover;
+    url('../img/killing-dreams-small-min.jpg') no-repeat 50% 10% / cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/killing-dreams-small-min.jpg") no-repeat 50% 10% / cover;
+    url('../img/killing-dreams-small-min.jpg') no-repeat 50% 10% / cover;
   height: 48rem;
   margin-bottom: 6rem;
   -webkit-box-shadow: 0 2rem 2rem var(--clr-primary-2);
@@ -2970,7 +3024,7 @@ Whole Series Section
 .sprit-box-b {
   position: relative;
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/question-mark-min.jpg") no-repeat center/cover;
+    url('../img/question-mark-min.jpg') no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2978,9 +3032,9 @@ Whole Series Section
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/question-mark-min.jpg") no-repeat center/cover;
+    url('../img/question-mark-min.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/question-mark-min.jpg") no-repeat center/cover;
+    url('../img/question-mark-min.jpg') no-repeat center/cover;
   background-position: 75% 50%;
   height: 48rem;
   margin-bottom: 6rem;
@@ -3045,7 +3099,7 @@ Buried Alive Single Page
 
 .buried-alive-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat 50% 18% / cover;
+    url('../img/BuriedAlive_w16414_ib-min.jpg') no-repeat 50% 18% / cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -3053,9 +3107,9 @@ Buried Alive Single Page
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat 50% 18% / cover;
+    url('../img/BuriedAlive_w16414_ib-min.jpg') no-repeat 50% 18% / cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat 50% 18% / cover;
+    url('../img/BuriedAlive_w16414_ib-min.jpg') no-repeat 50% 18% / cover;
   height: 85vh;
 }
 
@@ -3065,7 +3119,7 @@ Buried Alive Single Page
 }
 
 .buried-alive-hero h1::after {
-  content: "Book 2";
+  content: 'Book 2';
   font-size: 1.3rem;
   color: var(--clr-white);
 }
@@ -3078,7 +3132,7 @@ Buried Alive Single Page
 }
 
 .single-book-picture-c {
-  background: url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat center/cover;
+  background: url('../img/BuriedAlive_w16414_ib-min.jpg') no-repeat center/cover;
   height: 50rem;
   max-width: 500px;
   -o-object-fit: cover;
@@ -3090,7 +3144,7 @@ Buried Alive Single Page
 .sprit-box-buried {
   position: relative;
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat center/cover;
+    url('../img/BuriedAlive_w16414_ib-min.jpg') no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -3098,9 +3152,9 @@ Buried Alive Single Page
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat center/cover;
+    url('../img/BuriedAlive_w16414_ib-min.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat center/cover;
+    url('../img/BuriedAlive_w16414_ib-min.jpg') no-repeat center/cover;
   background-position: 75% 50%;
   height: 48rem;
   margin-bottom: 6rem;
