@@ -2038,7 +2038,7 @@ Movie Card
 }
 
 .movie-card p {
-  font-size: 0.87rem;
+  font-size: 0.9rem;
   color: var(--clr-primary-3);
   letter-spacing: 0.12px;
   margin-bottom: 5px;
@@ -2058,7 +2058,7 @@ Movie Card
   padding: 5px;
   margin-bottom: 5px;
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 0.85rem;
   outline: 2px solid transparent;
   outline-offset: 1px;
 }
@@ -2092,6 +2092,9 @@ Movie Card
   .movie-card {
     height: 660px;
   }
+  .movie-card p {
+    font-size: 0.85rem;
+  }
 }
 
 @media screen and (min-width: 776px) {
@@ -2107,6 +2110,12 @@ Movie Card
   }
 }
 
+@media screen and (min-width: 800px) {
+  .movie-card {
+    height: 750px;
+  }
+}
+
 @media screen and (min-width: 900px) {
   .movie-card {
     height: 700px;
@@ -2116,6 +2125,21 @@ Movie Card
 @media screen and (min-width: 975px) {
   .movie-card {
     height: 650px;
+  }
+}
+
+@media screen and (min-width: 1175px) {
+  .movie-cards-center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .movie-card p {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .movie-card p {
+    font-size: 0.8rem;
   }
 }
 
@@ -2953,9 +2977,7 @@ Release Info
 
 .release-box img {
   display: block;
-  width: 250px;
-  width: 90%;
-  height: 10rem;
+  height: 22rem;
   -o-object-fit: cover;
   object-fit: cover;
   margin: 0 auto 1rem;
