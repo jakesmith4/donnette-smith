@@ -1295,11 +1295,11 @@ More Book Info
 }
 
 .card-killing-dreams {
-  background: #222;
+  background: #000;
   height: 21rem;
   width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  /* -o-object-fit: cover;
+  object-fit: cover; */
   position: relative;
   display: block;
 }
