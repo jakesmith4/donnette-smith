@@ -1976,7 +1976,7 @@ Movie Card
   -o-transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   overflow: hidden;
-  height: 900px;
+  height: 725px;
   position: relative;
   margin-bottom: 2rem;
   max-width: 425px;
@@ -2060,7 +2060,7 @@ Movie Card
 }
 
 .movie-card p {
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   color: var(--clr-primary-3);
   letter-spacing: 0.12px;
   margin-bottom: 5px;
@@ -2080,7 +2080,7 @@ Movie Card
   padding: 5px;
   margin-bottom: 5px;
   text-transform: capitalize;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   outline: 2px solid transparent;
   outline-offset: 1px;
 }
@@ -2091,13 +2091,19 @@ Movie Card
 
 @media screen and (min-width: 330px) {
   .movie-card {
-    height: 825px;
+    height: 715px;
   }
 }
 
 @media screen and (min-width: 340px) {
   .movie-card {
-    height: 775px;
+    height: 685px;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .movie-card {
+    height: 660px;
   }
 }
 
@@ -2106,23 +2112,26 @@ Movie Card
     margin-top: 1rem;
   }
   .movie-card {
-    height: 725px;
+    height: 635px;
   }
 }
 
 @media screen and (min-width: 393px) {
   .movie-card {
-    height: 665px;
+    height: 620px;
   }
 }
 
 @media screen and (min-width: 425px) {
   .movie-card {
-    height: 650px;
+    height: 600px;
   }
 }
 
 @media screen and (min-width: 576px) {
+  .movie-card{
+    height: 650px;
+  }
   .movie-card p {
     font-size: 0.85rem;
   }
