@@ -1206,16 +1206,13 @@ Connect
 More Book Info
 ===============
 */
-.card {
-  margin-bottom: 2rem;
+.card:not(:last-child) {
+  margin-bottom: 4rem;
 }
 
 .cunja-video {
-  background: #222;
-  /* height: 21rem; */
+  background: #000;
   width: 100%;
-  /* -o-object-fit: cover;
-  object-fit: cover; */
   display: block;
 }
 
@@ -1295,12 +1292,8 @@ More Book Info
 }
 
 .killing-dreams-video {
-  background: #222;
-  /* height: 21rem; */
+  background: #000;
   width: 100%;
-  /* -o-object-fit: cover;
-  object-fit: cover; */
-  position: relative;
   display: block;
 }
 
@@ -1310,13 +1303,10 @@ More Book Info
   margin: 0 auto 1rem;
 }
 
-.card-buried-alive {
-  background: url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat 50% 12% /
-    cover;
-  height: 21rem;
-  -o-object-fit: cover;
-  object-fit: cover;
-  position: relative;
+.buried-alive-video {
+  background: #000;
+  width: 100%;
+  display: block;
 }
 
 .sprit-walker-title::before {
@@ -1363,6 +1353,9 @@ More Book Info
   .cunja-video {
     height: 21rem;
   }
+  .buried-alive-video {
+    height: 21rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1374,9 +1367,13 @@ More Book Info
     column-gap: 2rem;
   }
 
+  .card:nth-child(3) {
+    margin-bottom: 0;
+  }
+
   .cunja-video,
   .killing-dreams-video,
-  .card-buried-alive,
+  .buried-alive-video,
   .card-the-stolen,
   .card-info {
     height: 23rem;
