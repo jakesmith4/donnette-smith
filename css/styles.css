@@ -2107,7 +2107,7 @@ Movie Card
   }
 }
 
-@media screen and (min-width: 365px) {
+@media screen and (min-width: 360px) {
   .movie-card .button-container {
     margin-top: 1rem;
   }
@@ -2129,7 +2129,7 @@ Movie Card
 }
 
 @media screen and (min-width: 576px) {
-  .movie-card{
+  .movie-card {
     height: 650px;
   }
   .movie-card p {
