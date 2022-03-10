@@ -1294,9 +1294,9 @@ More Book Info
   outline-color: var(--clr-primary-3);
 }
 
-.card-killing-dreams {
-  background: #000;
-  height: 21rem;
+.killing-dreams-video {
+  background: #222;
+  /* height: 21rem; */
   width: 100%;
   /* -o-object-fit: cover;
   object-fit: cover; */
@@ -1357,6 +1357,9 @@ More Book Info
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .killing-dreams-video {
+    height: 21rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1369,7 +1372,7 @@ More Book Info
   }
 
   .cunja-video,
-  .card-killing-dreams,
+  .killing-dreams-video,
   .card-buried-alive,
   .card-the-stolen,
   .card-info {
