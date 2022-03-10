@@ -1210,12 +1210,13 @@ More Book Info
   margin-bottom: 2rem;
 }
 
-.card-cunja {
-  background: url("../img/cunja-min.jpg") no-repeat center/cover;
-  background-position: 50% 80%;
+.cunja-video {
+  background: #000;
   height: 21rem;
-  -o-object-fit: cover;
-  object-fit: cover;
+  width: 100%;
+  /* -o-object-fit: cover;
+  object-fit: cover; */
+  display: block;
 }
 
 .card-info {
@@ -1294,12 +1295,13 @@ More Book Info
 }
 
 .card-killing-dreams {
-  background: url("../img/killing-dreams-small-min.jpg") no-repeat 50% 12% /
-    cover;
+  background: #222;
   height: 21rem;
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   position: relative;
+  display: block;
 }
 
 .card-b h4 {
@@ -1366,7 +1368,7 @@ More Book Info
     column-gap: 2rem;
   }
 
-  .card-cunja,
+  .cunja-video,
   .card-killing-dreams,
   .card-buried-alive,
   .card-the-stolen,
