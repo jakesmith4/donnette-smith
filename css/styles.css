@@ -1774,7 +1774,7 @@ Hero
 
 .books-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/sunset-hero-min.jpg") no-repeat center/cover;
+    url("../img/books-hero-new.jpg") no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -1782,17 +1782,21 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/sunset-hero-min.jpg") no-repeat center/cover;
+    url("../img/books-hero-new.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/sunset-hero-min.jpg") no-repeat center/cover;
-  background-position: 50% 90%;
-  height: 100vh;
+    url("../img/books-hero-new.jpg") no-repeat center/cover;
+  /* background-position: 50% 90%; */
+  height: 85vh;
 }
 
-.books-hero h1 {
+.books-hero-heading {
   color: var(--clr-white);
   font-style: italic;
-  padding-top: 5rem;
+  font-size: 2.1rem;
+}
+
+.books-hero-heading > div {
+  margin-bottom: 0.5rem;
 }
 
 .books-hero h4 {
@@ -1806,6 +1810,13 @@ Hero
 .books-span {
   min-height: 41px;
   position: relative;
+  background: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.books-span:hover .span-img {
+  transform: translateX(0);
+  border-left-color: transparent;
 }
 
 .span-img {
@@ -1815,6 +1826,10 @@ Hero
   position: absolute;
   right: 0;
   top: 0;
+  border-left: 3px solid var(--clr-white);
+  border-right: 3px solid var(--clr-white);
+  transition: var(--transition);
+  transform: translateX(5px);
 }
 
 @media screen and (min-width: 650px) {
@@ -1824,6 +1839,7 @@ Hero
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     column-gap: 3rem;
+    font-size: 2.5rem;
   }
   .books-hero-heading > div {
     margin-bottom: 1rem;
@@ -1833,6 +1849,7 @@ Hero
 @media screen and (min-width: 850px) {
   .books-hero-heading {
     column-gap: 8rem;
+    font-size: 3rem;
   }
 
   .books-hero-heading > div {
@@ -1857,7 +1874,6 @@ Book Info
 .book-info-img img {
   -o-object-fit: cover;
   object-fit: cover;
-  border-bottom-left-radius: var(--radius);
 }
 
 @media screen and (min-width: 1000px) {
@@ -1878,6 +1894,9 @@ Book Info
     -webkit-box-flex: 0;
     -ms-flex: 0 0 40%;
     flex: 0 0 40%;
+  }
+  .book-info-img img {
+    border-bottom-left-radius: var(--radius);
   }
   .book-info-box {
     -webkit-box-flex: 0;
@@ -2968,7 +2987,7 @@ Release Info
 
 .single-book-picture-b {
   background: url("../img/killing-dreams-small-min.jpg") no-repeat center/cover;
-  height: 50rem;
+  height: 30rem;
   max-width: 500px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -3003,6 +3022,30 @@ Release Info
 .release-box-info p {
   letter-spacing: 1px;
   color: var(--clr-grey-1);
+}
+
+@media screen and (min-width: 350px) {
+  .single-book-picture-b {
+    height: 35rem;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .single-book-picture-b {
+    height: 40rem;
+  }
+}
+
+@media screen and (min-width: 460px) {
+  .single-book-picture-b {
+    height: 45rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .single-book-picture-b {
+    height: 50rem;
+  }
 }
 
 @media screen and (min-width: 676px) {
