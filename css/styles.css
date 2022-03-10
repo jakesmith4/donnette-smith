@@ -254,6 +254,7 @@ Global Classes
 
 .text-shadow {
   text-shadow: 2px 2px 0 var(--clr-primary-2), 3px 3px 0 var(--clr-primary-1);
+  padding: 0 1rem;
 }
 
 .divider {
@@ -1975,7 +1976,7 @@ Movie Card
   -o-transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   overflow: hidden;
-  height: 1000px;
+  height: 900px;
   position: relative;
   margin-bottom: 2rem;
   max-width: 425px;
@@ -2059,7 +2060,7 @@ Movie Card
 }
 
 .movie-card p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--clr-primary-3);
   letter-spacing: 0.12px;
   margin-bottom: 5px;
@@ -2090,7 +2091,13 @@ Movie Card
 
 @media screen and (min-width: 330px) {
   .movie-card {
-    height: 950px;
+    height: 825px;
+  }
+}
+
+@media screen and (min-width: 340px) {
+  .movie-card {
+    height: 775px;
   }
 }
 
@@ -2099,20 +2106,23 @@ Movie Card
     margin-top: 1rem;
   }
   .movie-card {
-    height: 840px;
+    height: 725px;
+  }
+}
+
+@media screen and (min-width: 393px) {
+  .movie-card {
+    height: 665px;
   }
 }
 
 @media screen and (min-width: 425px) {
   .movie-card {
-    height: 750px;
+    height: 650px;
   }
 }
 
 @media screen and (min-width: 576px) {
-  .movie-card {
-    height: 660px;
-  }
   .movie-card p {
     font-size: 0.85rem;
   }
@@ -3081,7 +3091,7 @@ Whole Series Section
     url("../img/killing-dreams-small-min.jpg") no-repeat 50% 10% / cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/killing-dreams-small-min.jpg") no-repeat 50% 10% / cover;
-  height: 48rem;
+  height: 44rem;
   margin-bottom: 6rem;
   -webkit-box-shadow: 0 2rem 2rem var(--clr-primary-2);
   box-shadow: 0 2rem 2rem var(--clr-primary-2);
@@ -3136,6 +3146,12 @@ Whole Series Section
   margin-bottom: 6rem;
   -webkit-box-shadow: 0 2rem 2rem var(--clr-primary-2);
   box-shadow: 0 2rem 2rem var(--clr-primary-2);
+}
+
+@media screen and (min-width: 350px) {
+  .sprit-box {
+    height: 40rem;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -3256,7 +3272,7 @@ Buried Alive Single Page
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/BuriedAlive_w16414_ib-min.jpg") no-repeat center/cover;
   background-position: 75% 50%;
-  height: 48rem;
+  height: 40rem;
   margin-bottom: 6rem;
   -webkit-box-shadow: 0 2rem 2rem var(--clr-primary-2);
   box-shadow: 0 2rem 2rem var(--clr-primary-2);
