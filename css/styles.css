@@ -2537,7 +2537,7 @@ Hero
 
 .blog-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/couple-hero-min.jpg") no-repeat center/cover;
+    url("../img/blog-hero-new.jpg") no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2545,11 +2545,10 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/couple-hero-min.jpg") no-repeat center/cover;
+    url("../img/blog-hero-new.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/couple-hero-min.jpg") no-repeat center/cover;
+    url("../img/blog-hero-new.jpg") no-repeat center/cover;
   height: 70vh;
-  background-position: 50% 40%;
 }
 
 .blog-hero h1 {
