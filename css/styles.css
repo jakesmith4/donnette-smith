@@ -1218,7 +1218,7 @@ More Book Info
 
 .card-info {
   background: #222;
-  height: 21rem;
+  /* height: 21rem; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1228,6 +1228,10 @@ More Book Info
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.card-info:not(.card-text-full) {
+  height: 17rem;
 }
 
 .card-info h4 {
@@ -1267,6 +1271,11 @@ More Book Info
   color: var(--clr-white);
   letter-spacing: 1px;
   font-style: italic;
+  max-width: 400px;
+}
+
+.card-info p:not(.stolen-text) {
+  font-size: 1.4rem;
 }
 
 .card-btn {
@@ -1336,7 +1345,6 @@ More Book Info
 
 .stolen-title::after {
   content: "Book 3";
-  font-size: 1rem;
 }
 
 .stolen-text {
@@ -1348,6 +1356,37 @@ More Book Info
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .card-info p:not(.stolen-text) {
+    font-size: 1.3rem;
+  }
+
+  .killing-dreams-video {
+    height: 17rem;
+  }
+  .cunja-video {
+    height: 17rem;
+  }
+  .buried-alive-video {
+    height: 17rem;
+  }
+}
+
+@media screen and (min-width: 964px) {
+  .card video {
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .card video {
+    object-fit: contain;
+  }
+
+  .card-info:not(.stolen-text) {
+    height: 21rem;
+  }
+
   .killing-dreams-video {
     height: 21rem;
   }
@@ -1360,16 +1399,8 @@ More Book Info
 }
 
 @media screen and (min-width: 1200px) {
-  .more-info-center {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
-  }
-
-  .card:nth-child(3) {
-    margin-bottom: 0;
+  .card video {
+    object-fit: cover;
   }
 
   .cunja-video,
@@ -1377,7 +1408,7 @@ More Book Info
   .buried-alive-video,
   .card-the-stolen,
   .card-info {
-    height: 23rem;
+    height: 21rem;
   }
 }
 
