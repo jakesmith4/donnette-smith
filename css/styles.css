@@ -1326,7 +1326,8 @@ More Book Info
 }
 
 .card-the-stolen {
-  background: #222;
+  /* background: #222; */
+  background: url("../img/photo-coming-soon.webp") no-repeat center/cover;
   height: 21rem;
   -o-object-fit: cover;
   object-fit: cover;
