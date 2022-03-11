@@ -1355,6 +1355,7 @@ More Book Info
   .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    border: 4px solid var(--clr-primary-2);
   }
 
   .card-info p:not(.stolen-text) {
@@ -2498,16 +2499,16 @@ Newsletter Card
       rgba(255, 255, 255, 0.8) 50%,
       transparent 50%
     ),
-    url("../img/pair-bg-min.png") no-repeat center/cover;
+    url("../img/newsletter-card-min.jpg") no-repeat center/cover;
   background: linear-gradient(
       101deg,
       rgba(255, 255, 255, 0.8) 0%,
       rgba(255, 255, 255, 0.8) 50%,
       transparent 50%
     ),
-    url("../img/pair-bg-min.png") no-repeat center/cover;
+    url("../img/newsletter-card-min.jpg") no-repeat center/cover;
   height: 30rem;
-  background-position: 70% bottom;
+  background-position: 50%;
   border-radius: var(--radius);
   -webkit-box-shadow: 0 1.5rem 4rem #000;
   box-shadow: 0 1.5rem 4rem #000;
@@ -2574,7 +2575,7 @@ Hero
 
 .blog-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/blog-hero-new.jpg") no-repeat center/cover;
+    url("../img/blog-hero-romance-min.jpg") no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2582,9 +2583,9 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../img/blog-hero-new.jpg") no-repeat center/cover;
+    url("../img/blog-hero-romance-min.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/blog-hero-new.jpg") no-repeat center/cover;
+    url("../img/blog-hero-romance-min.jpg") no-repeat center/cover;
   height: 70vh;
 }
 
