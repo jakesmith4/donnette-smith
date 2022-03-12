@@ -2514,6 +2514,7 @@ Newsletter Tabs
   .about-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
     column-gap: 2rem;
   }
 }
@@ -2564,6 +2565,20 @@ Newsletter Tabs
 }
 .content.active {
   display: block;
+}
+
+.newsletter-tabs-list {
+  list-style-type: disc;
+  margin-left: 1.2rem;
+  color: var(--clr-grey-5);
+}
+
+.newsletter-tabs-list li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.book-tour-text {
+  margin-top: 0.7rem;
 }
 
 /* 
