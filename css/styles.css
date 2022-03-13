@@ -2499,25 +2499,18 @@ Newsletter Tabs
 }
 
 .newsletter-tabs-img {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .newsletter-tabs-img img {
   border-radius: var(--radius);
   object-fit: cover;
-  height: 20rem;
+  height: 10rem;
 }
-@media screen and (min-width: 992px) {
-  .newsletter-tabs-img {
-    margin-bottom: 0;
+/* @media screen and (min-width: 992px) {
+  .newsletter-tabs-img img {
+    height: 14rem;
   }
-
-  .about-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: flex-start;
-    column-gap: 2rem;
-  }
-}
+} */
 .about {
   background: var(--clr-white);
   border-radius: var(--radius);
@@ -2556,6 +2549,10 @@ Newsletter Tabs
   border-bottom-right-radius: var(--radius);
   padding: 2rem 1.5rem;
 }
+
+.content p {
+  max-width: 800px;
+}
 /* hide content */
 .content {
   display: none;
@@ -2579,6 +2576,16 @@ Newsletter Tabs
 
 .book-tour-text {
   margin-top: 0.7rem;
+}
+
+@media screen and (min-width: 992px) {
+  .newsletter-tabs-img img {
+    height: 14rem;
+  }
+  .newsletter-tabs-picture img {
+    width: 50%;
+    object-fit: cover;
+  }
 }
 
 /* 
