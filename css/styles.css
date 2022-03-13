@@ -444,6 +444,14 @@ Sidebar
   width: 100%;
   height: 100%;
   /* background: var(--clr-primary-1); */
+  background: -o-linear-gradient(bottom right, #222, #010101);
+  background: -webkit-gradient(
+    linear,
+    right bottom,
+    left top,
+    from(#222),
+    to(#010101)
+  );
   background: linear-gradient(to top left, #222, #010101);
   z-index: 4;
   display: -webkit-box;
@@ -1375,12 +1383,14 @@ More Book Info
 
 @media screen and (min-width: 964px) {
   .card video {
+    -o-object-fit: cover;
     object-fit: cover;
   }
 }
 
 @media screen and (min-width: 1020px) {
   .card video {
+    -o-object-fit: contain;
     object-fit: contain;
   }
 
@@ -1401,6 +1411,7 @@ More Book Info
 
 @media screen and (min-width: 1200px) {
   .card video {
+    -o-object-fit: cover;
     object-fit: cover;
   }
 
@@ -1854,6 +1865,8 @@ Hero
 }
 
 .books-span:hover .span-img {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0);
   border-left-color: transparent;
 }
@@ -1861,13 +1874,18 @@ Hero
 .span-img {
   height: 100%;
   width: 3rem;
+  -o-object-fit: cover;
   object-fit: cover;
   position: absolute;
   right: 0;
   top: 0;
   border-left: 3px solid var(--clr-white);
   border-right: 3px solid var(--clr-white);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
+  -webkit-transform: translateX(5px);
+  -ms-transform: translateX(5px);
   transform: translateX(5px);
 }
 
@@ -1876,7 +1894,11 @@ Hero
     padding-top: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-column-gap: 3rem;
+    -moz-column-gap: 3rem;
     column-gap: 3rem;
     font-size: 2.5rem;
   }
@@ -1887,6 +1909,8 @@ Hero
 
 @media screen and (min-width: 850px) {
   .books-hero-heading {
+    -webkit-column-gap: 8rem;
+    -moz-column-gap: 8rem;
     column-gap: 8rem;
     font-size: 3rem;
   }
@@ -2508,6 +2532,7 @@ Newsletter Tabs
 }
 .newsletter-tabs-img img {
   border-radius: var(--radius);
+  -o-object-fit: cover;
   object-fit: cover;
   height: 10rem;
 }
@@ -2538,6 +2563,8 @@ Newsletter Tabs
   display: block;
   background: var(--clr-grey-9);
   cursor: pointer;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
   letter-spacing: var(--spacing);
 }
@@ -2586,6 +2613,7 @@ Newsletter Tabs
   }
   .newsletter-tabs-picture img {
     width: 50%;
+    -o-object-fit: cover;
     object-fit: cover;
   }
   .book-tour-text {
@@ -2688,6 +2716,8 @@ Blog Post Cards
 .post-card-img-container {
   overflow: hidden;
   position: relative;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
   border-bottom: 2px solid var(--clr-white);
 }
@@ -2700,6 +2730,8 @@ Blog Post Cards
   width: 100%;
   height: 100%;
   background: transparent;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
 }
 
@@ -2719,7 +2751,11 @@ Blog Post Cards
   letter-spacing: 2px;
   text-transform: capitalize;
   text-align: center;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
   transform: scale(0);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
   z-index: 1;
 }
@@ -2740,7 +2776,11 @@ Blog Post Cards
   letter-spacing: 2px;
   text-transform: capitalize;
   text-align: center;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
   transform: scale(0);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
   z-index: 1;
 }
@@ -2761,17 +2801,25 @@ Blog Post Cards
   letter-spacing: 2px;
   text-transform: capitalize;
   text-align: center;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
   transform: scale(0);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
   z-index: 1;
 }
 
 .post-card-img {
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
   display: block;
 }
 
 .post-card:hover .post-card-img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
 
@@ -2785,6 +2833,8 @@ Blog Post Cards
 }
 
 .post-card:hover .post-card-img-container::after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
 }
 
@@ -2811,12 +2861,16 @@ Blog Post Cards
 
 .post-card-info .underline {
   background: var(--clr-white);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
 }
 
 .post-card-title {
   color: var(--clr-white);
   font-size: 1.2rem;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
   min-height: 4.5rem;
 }
@@ -2824,6 +2878,8 @@ Blog Post Cards
 .post-card-text {
   font-size: 1rem;
   color: var(--clr-white);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
   max-width: 400px;
 }
@@ -2841,6 +2897,7 @@ Blog Post Cards
   }
   .post-card-img {
     height: 247px;
+    -o-object-fit: cover;
     object-fit: cover;
   }
   .post-card-info {
@@ -3062,6 +3119,8 @@ Hero
 
 .book-page-info-center {
   display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
