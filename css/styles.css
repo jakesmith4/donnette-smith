@@ -2492,6 +2492,12 @@ Newsletter Page
 Newsletter Tabs
 ================
 */
+.newsletter-tabs-main-text {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 0 2rem;
+}
+
 .newsletter-tabs-text {
   width: 80%;
   margin: 0 auto;
@@ -2505,11 +2511,7 @@ Newsletter Tabs
   object-fit: cover;
   height: 10rem;
 }
-/* @media screen and (min-width: 992px) {
-  .newsletter-tabs-img img {
-    height: 14rem;
-  }
-} */
+
 .about {
   background: var(--clr-white);
   border-radius: var(--radius);
@@ -2549,9 +2551,6 @@ Newsletter Tabs
   padding: 2rem 1.5rem;
 }
 
-.content p {
-  max-width: 800px;
-}
 /* hide content */
 .content {
   display: none;
@@ -2561,6 +2560,10 @@ Newsletter Tabs
 }
 .content.active {
   display: block;
+}
+
+.newsletter-tabs-picture img {
+  margin-bottom: 1.25rem;
 }
 
 .newsletter-tabs-list {
@@ -2584,6 +2587,9 @@ Newsletter Tabs
   .newsletter-tabs-picture img {
     width: 50%;
     object-fit: cover;
+  }
+  .book-tour-text {
+    max-width: 800px;
   }
 }
 

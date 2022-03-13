@@ -14,9 +14,11 @@ window.addEventListener('scroll', function () {
 // Show Sidebar
 navBtn.addEventListener('click', function () {
   sidebar.classList.add('show-sidebar');
+  document.body.style.overflow = 'hidden';
 });
 closeBtn.addEventListener('click', function () {
   sidebar.classList.remove('show-sidebar');
+  document.body.style.overflow = 'visible';
 });
 // Smooth Scoll
 const scrollLink = document.querySelector('.scroll-link');
