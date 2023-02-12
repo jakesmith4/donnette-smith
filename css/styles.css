@@ -1817,37 +1817,43 @@ Book Info
   margin: 0 auto 2rem;
 }
 
+.book-info-img {
+  height: 100%;
+}
+
 .book-info-img img {
   -o-object-fit: cover;
   object-fit: cover;
+  height: 100%;
 }
 
 @media screen and (min-width: 1000px) {
   .book-info-card {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    height: 650px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     max-width: 1170px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
-  .book-info-card:nth-of-type(3) {
-    height: 780px;
-  }
+
   .book-info-img {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 40%;
     flex: 0 0 40%;
   }
+
   .book-info-img img {
     border-bottom-left-radius: var(--radius);
   }
+
   .book-info-box {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 60%;
     flex: 0 0 60%;
+    border-bottom-left-radius: 0 !important;
+    display: flex;
+    align-items: center;
   }
 }
 
