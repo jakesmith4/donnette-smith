@@ -949,127 +949,6 @@ Books
   }
 }
 
-/*
-=============== 
-Blog
-===============
-*/
-.blog-text {
-  width: 85vw;
-  max-width: 30rem;
-  margin: 0 auto;
-  letter-spacing: 1.5px;
-}
-
-.blog-post {
-  position: relative;
-  background: var(--clr-primary-2);
-  border-radius: var(--radius);
-  margin-bottom: 2rem;
-}
-
-.blog-info {
-  position: absolute;
-  text-align: center;
-  color: var(--clr-white);
-  top: 50%;
-  left: 50%;
-  width: 85%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-  height: 85%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 0 0.8rem;
-  transition: var(--transition);
-  background: rgba(34, 34, 34, 0.8);
-  border-radius: var(--radius);
-}
-
-.blog-post:hover .blog-info {
-  background: rgba(55, 114, 255, 0.9);
-}
-
-.blog-info h4 {
-  font-size: 1.5rem;
-}
-
-.blog-info p {
-  color: var(--clr-white);
-  letter-spacing: 1px;
-  margin-top: -8px;
-}
-
-.blog-click-p {
-  text-transform: uppercase;
-  background: var(--clr-primary-2);
-  font-weight: bold;
-}
-
-.blog-post:hover .blog-info {
-  opacity: 1;
-}
-
-.blog-img {
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-  border-radius: var(--radius);
-  height: 21rem;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.blog-post::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0.25rem solid var(--clr-primary-2);
-  border-radius: var(--radius);
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-  opacity: 0;
-}
-
-.blog-post:hover::after {
-  opacity: 1;
-  -webkit-transform: scale(0.85);
-  -ms-transform: scale(0.85);
-  transform: scale(0.85);
-}
-
-@media screen and (min-width: 676px) {
-  .blog-center {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
-  }
-}
-
-@media screen and (min-width: 1170px) {
-  .blog-center {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 /* 
 ============
 Connect
@@ -1246,7 +1125,7 @@ More Book Info
   align-items: center;
 }
 
-.card-info:not(.card-text-full) {
+.card-info {
   height: 17rem;
 }
 
@@ -1290,7 +1169,7 @@ More Book Info
   max-width: 400px;
 }
 
-.card-info p:not(.stolen-text) {
+.card-info p {
   font-size: 1.4rem;
 }
 
@@ -1369,7 +1248,7 @@ More Book Info
     border: 4px solid var(--clr-primary-2);
   }
 
-  .card-info p:not(.stolen-text) {
+  .card-info p {
     font-size: 1.3rem;
   }
 
@@ -1397,7 +1276,7 @@ More Book Info
     object-fit: contain;
   }
 
-  .card-info:not(.stolen-text) {
+  .card-info {
     height: 21rem;
   }
 
@@ -2638,7 +2517,7 @@ Hero
 
 .blog-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/comming-soon-bcg.png') no-repeat center/cover;
+    url('../img/comming-soon-bcg.jpg') no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2646,23 +2525,10 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url('../img/comming-soon-bcg.png') no-repeat center/cover;
+    url('../img/comming-soon-bcg.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/comming-soon-bcg.png') no-repeat 10% 50% / cover;
+    url('../img/comming-soon-bcg.jpg') no-repeat center / cover;
   height: 65vh;
-}
-
-.blog-hero h1 {
-  color: var(--clr-white);
-  font-style: italic;
-}
-
-.blog-hero h4 {
-  color: var(--clr-white);
-  background: var(--clr-primary-2);
-  padding: 0.3rem 1rem;
-  max-width: 250px;
-  font-size: 1.3rem;
 }
 
 @media screen and (min-width: 576px) {
@@ -2705,7 +2571,17 @@ Blog Intro
   letter-spacing: 1px;
 }
 
+.newsletter-page-link {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 576px) {
+  .blog-intro-img img {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .blog-intro-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2716,220 +2592,9 @@ Blog Intro
     -moz-column-gap: 2rem;
     column-gap: 2rem;
   }
-}
 
-/* 
-==============
-Blog Page
-Blog Post Cards
-==============
- */
-.post-card {
-  margin-bottom: 3rem;
-  overflow: hidden;
-}
-
-.post-card-img-container {
-  overflow: hidden;
-  position: relative;
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-  border-bottom: 2px solid var(--clr-white);
-}
-
-.post-card-img-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-}
-
-.post-1::after {
-  content: 'why authors hate their first book';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0 2rem;
-  display: grid;
-  place-items: center;
-  color: var(--clr-white);
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: capitalize;
-  text-align: center;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-  z-index: 1;
-}
-
-.post-2::after {
-  content: 'how the sprit walkers trilogy was born';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0 2rem;
-  display: grid;
-  place-items: center;
-  color: var(--clr-white);
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: capitalize;
-  text-align: center;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-  z-index: 1;
-}
-
-.post-3::after {
-  content: 'the good, the great, and the best';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0 2rem;
-  display: grid;
-  place-items: center;
-  color: var(--clr-white);
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: capitalize;
-  text-align: center;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-  z-index: 1;
-}
-
-.post-card-img {
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-  display: block;
-}
-
-.post-card:hover .post-card-img {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-.post-card:hover .post-card-img-container {
-  border-color: var(--clr-primary-2);
-}
-
-.post-card:hover .post-card-img-container::before {
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.post-card:hover .post-card-img-container::after {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.post-card:hover .post-card-title {
-  color: var(--clr-primary-2);
-}
-
-.post-card:hover .post-card-info .underline {
-  background: var(--clr-primary-2);
-}
-
-.post-card:hover .post-card-text {
-  color: var(--clr-primary-2);
-}
-
-.post-card:hover .post-card-btn {
-  background: var(--clr-primary-2);
-}
-
-.post-card-info {
-  padding: 2rem;
-  background: #222;
-}
-
-.post-card-info .underline {
-  background: var(--clr-white);
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-}
-
-.post-card-title {
-  color: var(--clr-white);
-  font-size: 1.2rem;
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-  min-height: 4.5rem;
-}
-
-.post-card-text {
-  font-size: 1rem;
-  color: var(--clr-white);
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-  max-width: 400px;
-}
-
-.post-card-btn {
-  width: 100%;
-}
-
-@media screen and (min-width: 676px) {
-  .post-card-center {
-    row-gap: 3rem;
-  }
-  .post-card {
-    margin-bottom: 0;
-  }
-  .post-card-img {
-    height: 247px;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
-  .post-card-info {
-    min-height: 23rem;
-  }
-}
-
-@media screen and (min-width: 725px) {
-  .post-card-info {
-    min-height: 21.5rem;
-  }
-}
-
-@media screen and (min-width: 825px) {
-  .post-card-info {
-    min-height: 18rem;
+  .blog-intro-img img {
+    height: 500px;
   }
 }
 
