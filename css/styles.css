@@ -2638,7 +2638,7 @@ Hero
 
 .blog-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/blog-hero-romance-min.jpg') no-repeat center/cover;
+    url('../img/comming-soon-bcg.png') no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -2646,10 +2646,10 @@ Hero
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url('../img/blog-hero-romance-min.jpg') no-repeat center/cover;
+    url('../img/comming-soon-bcg.png') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/blog-hero-romance-min.jpg') no-repeat center/cover;
-  height: 70vh;
+    url('../img/comming-soon-bcg.png') no-repeat 10% 50% / cover;
+  height: 65vh;
 }
 
 .blog-hero h1 {
@@ -2663,6 +2663,18 @@ Hero
   padding: 0.3rem 1rem;
   max-width: 250px;
   font-size: 1.3rem;
+}
+
+@media screen and (min-width: 576px) {
+  .blog-hero {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog-hero {
+    height: 100vh;
+  }
 }
 
 /* 
