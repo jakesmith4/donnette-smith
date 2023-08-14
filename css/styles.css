@@ -1724,8 +1724,7 @@ Hero
     url('../img/books-hero-new.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('../img/books-hero-new.jpg') no-repeat center/cover;
-  /* background-position: 50% 90%; */
-  height: 85vh;
+  height: 90vh;
 }
 
 .books-hero-heading {
@@ -1734,8 +1733,26 @@ Hero
   font-size: 2.1rem;
 }
 
-.books-hero-heading > div {
+.book-container {
   margin-bottom: 0.5rem;
+}
+
+.book-container:hover .book-wrapper {
+  border: 3px solid #fff;
+}
+
+.book-container:hover .book-heading {
+  color: var(--clr-primary-2);
+  background: #333;
+}
+
+.book-container:hover .book-sub-heading {
+  text-shadow: var(--dark-shadow);
+}
+
+.book-container:hover .book-img-cover {
+  width: 100%;
+  border-left: 5px solid #fff;
 }
 
 .books-hero h4 {
@@ -1746,21 +1763,39 @@ Hero
   font-size: 1.3rem;
 }
 
-.books-span {
-  min-height: 41px;
+.book-wrapper {
+  min-height: 75px;
   position: relative;
   background: rgba(0, 0, 0, 0.4);
   overflow: hidden;
+  border: 3px solid transparent;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  color: var(--clr-white);
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
 }
 
-.books-span:hover .span-img {
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
-  border-left-color: transparent;
+.book-heading {
+  color: #fff;
+  display: block;
+  padding: 0.2rem 0.4rem;
+  font-size: 1.8rem;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
 }
 
-.span-img {
+.book-sub-heading {
+  position: relative;
+  z-index: 3;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.book-img-cover {
   height: 100%;
   width: 3rem;
   -o-object-fit: cover;
@@ -1768,14 +1803,9 @@ Hero
   position: absolute;
   right: 0;
   top: 0;
-  border-left: 3px solid var(--clr-white);
-  border-right: 3px solid var(--clr-white);
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
-  -webkit-transform: translateX(5px);
-  -ms-transform: translateX(5px);
-  transform: translateX(5px);
 }
 
 @media screen and (min-width: 650px) {
@@ -1789,10 +1819,11 @@ Hero
     -webkit-column-gap: 3rem;
     -moz-column-gap: 3rem;
     column-gap: 3rem;
+    row-gap: 3rem;
     font-size: 2.5rem;
   }
-  .books-hero-heading > div {
-    margin-bottom: 1rem;
+  .book-heading {
+    font-size: 2.1rem;
   }
 }
 
@@ -1802,10 +1833,6 @@ Hero
     -moz-column-gap: 8rem;
     column-gap: 8rem;
     font-size: 3rem;
-  }
-
-  .books-hero-heading > div {
-    margin-bottom: 2.5rem;
   }
 }
 
