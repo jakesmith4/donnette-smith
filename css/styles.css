@@ -779,8 +779,6 @@ Books
 }
 
 .book-img {
-  background: url('../img/cunja-min.jpg') no-repeat center/cover;
-  background-position: 50% 70%;
   height: 380px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -788,25 +786,24 @@ Books
   border-top-right-radius: 5px;
 }
 
-.book-img-g {
+.book-a {
+  background: url('../img/cunja-min.jpg') no-repeat 50% 70% / cover;
+}
+
+.book-b {
   background: url('../img/killing-dreams-small-min.jpg') no-repeat 50% 12% /
     cover;
-  height: 380px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
   position: relative;
 }
 
-.book-img-c {
+.book-c {
   background: url('../img/BuriedAlive_w16414_ib-min.jpg') no-repeat 50% 12% /
     cover;
-  height: 380px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  position: relative;
+}
+
+.book-d {
+  background: url('../img/the-taken-card.jpg') no-repeat 50% 12% / cover;
   position: relative;
 }
 
@@ -849,6 +846,10 @@ Books
   content: 'Book 2';
 }
 
+.the-taken-book-num::after {
+  content: 'Book 3';
+}
+
 .title-a {
   margin-bottom: 40.2px;
 }
@@ -878,6 +879,11 @@ Books
   color: var(--clr-white);
   letter-spacing: 0.1px;
   font-style: italic;
+}
+
+.book-bold {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .button-container {
