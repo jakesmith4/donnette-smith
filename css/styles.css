@@ -1908,7 +1908,7 @@ Book Info
   min-height: 100%;
 }
 
-.killing-dream-heading::before {
+.all-book-headings::before {
   content: 'sprit walkers series';
   font-size: 1rem;
   margin-right: 1rem;
@@ -1917,32 +1917,27 @@ Book Info
   display: block;
 }
 
-.killing-dream-heading::after {
-  content: 'Book 1';
+.all-book-headings::after {
   font-size: 1rem;
   margin-left: 1rem;
   color: var(--clr-primary-2);
+}
+
+.killing-dream-heading::after {
+  content: 'Book 1';
+}
+
+.buried-alive-heading::after {
+  content: 'Book 2';
+}
+
+.the-taken-heading::after {
+  content: 'Book 3';
 }
 
 .book-info-box p {
   letter-spacing: 1px;
   max-width: 600px;
-}
-
-.buried-alive-heading::before {
-  content: 'sprit walkers series';
-  font-size: 1rem;
-  margin-right: 1rem;
-  color: var(--clr-primary-2);
-  white-space: nowrap;
-  display: block;
-}
-
-.buried-alive-heading::after {
-  content: 'Book 2';
-  font-size: 1rem;
-  margin-left: 1rem;
-  color: var(--clr-primary-2);
 }
 
 /* 
