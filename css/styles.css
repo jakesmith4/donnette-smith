@@ -562,6 +562,10 @@ Sidebar
   background: none;
 }
 
+.current-book .book-img-container img {
+  filter: contrast(200%);
+}
+
 .book-img-container img {
   height: 80px;
 }
@@ -572,12 +576,6 @@ Sidebar
   transition: var(--transition);
   -o-object-fit: cover;
   object-fit: cover;
-}
-
-.current-book .aside-book {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
 }
 
 .close-btn {
