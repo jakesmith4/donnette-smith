@@ -2764,71 +2764,31 @@ Single Post
 }
 
 /* 
-=================
-Cunja Single Page
-Hero
-=================
+=========================
+Global Single Page Styles
+ALL PAGES
+(CUNJA) (KILLING DREAMS) (BURIED ALIVE) (THE TAKEN)
+========================
 */
-.cunja-page-hero .underline {
+/* HERO */
+.hero-underline {
   margin-bottom: 0.5rem;
   margin-left: 0;
 }
 
-.cunja-page-hero {
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/cunja-min.jpg') no-repeat center/cover;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.3)),
-      to(rgba(0, 0, 0, 0.3))
-    ),
-    url('../img/cunja-min.jpg') no-repeat center/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/cunja-min.jpg') no-repeat center/cover;
-  height: 80vh;
-  background-position: 50% 95%;
-}
-
-.cunja-page-hero h1 {
+.hero-heading {
   color: var(--clr-white);
   font-style: italic;
 }
 
-.cunja-page-hero h4 {
-  color: var(--clr-white);
-  background: var(--clr-primary-2);
-  padding: 0.3rem 1rem;
-  max-width: 250px;
+.hero-heading::after {
   font-size: 1.3rem;
+  color: var(--clr-white);
 }
 
-.single-book-picture {
-  background: url('../img/cunja-min.jpg') no-repeat center/cover;
-  height: 30rem;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background-position: 50% 80%;
-}
-
-.single-book-info h3 {
-  margin-top: 0.7rem;
-}
-
-.single-book-info .underline {
-  margin-left: 0;
-  height: 3px;
-  width: 60px;
-  margin-top: -3px;
-}
-
+/* BOOK INFO */
 .single-book-info a {
   margin-right: 1rem;
-}
-
-.single-book-info a:nth-of-type(1),
-.single-book-info a:nth-of-type(2) {
   margin-bottom: 1rem;
 }
 
@@ -2852,12 +2812,29 @@ Hero
   }
 }
 
-/* 
-=================
-Cunja Single Page
-Reviews
-=================
-*/
+.single-book-pic {
+  max-width: 500px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+}
+
+.single-book-info h3 {
+  margin-top: 0.7rem;
+}
+
+.single-book-info .underline {
+  margin-left: 0;
+  height: 3px;
+  width: 60px;
+  margin-top: -3px;
+}
+
+.single-book-info p {
+  max-width: 500px;
+}
+
+/* REVIEWS */
 .reviews {
   overflow: hidden;
 }
@@ -2980,45 +2957,17 @@ Reviews
   }
 }
 
-/* 
-=========================
-Global Single Page Styles
-========================
-*/
-.hero-underline {
-  margin-bottom: 0.5rem;
-  margin-left: 0;
-}
-
-.hero-heading {
-  color: var(--clr-white);
-  font-style: italic;
-}
-
-.hero-heading::after {
-  font-size: 1.3rem;
-  color: var(--clr-white);
-}
-
-.single-book-pic {
-  max-width: 500px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  position: relative;
-}
-
-.single-book-info p {
-  max-width: 500px;
-}
+/* WHOLE SERIES SECTION */
+/* (KILLING DREAMS) (BURIED ALIVE) (THE TAKEN) */
 
 .sprit-box {
+  position: relative;
   margin-bottom: 6rem;
   -webkit-box-shadow: 0 2rem 2rem var(--clr-primary-2);
   box-shadow: 0 2rem 2rem var(--clr-primary-2);
 }
 
 .sprit-box-killing-dreams {
-  position: relative;
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('../img/killing-dreams-small-min.jpg') no-repeat 50% 10% / cover;
   background: -webkit-gradient(
@@ -3035,7 +2984,6 @@ Global Single Page Styles
 }
 
 .sprit-box-buried {
-  position: relative;
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('../img/BuriedAlive_w16414_ib-min.jpg') no-repeat center/cover;
   background: -webkit-gradient(
@@ -3053,9 +3001,8 @@ Global Single Page Styles
 }
 
 .sprit-box-taken {
-  position: relative;
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/question-mark-min.jpg') no-repeat center/cover;
+    url('../img/the-taken-card.jpg') no-repeat center/cover;
   background: -webkit-gradient(
       linear,
       left top,
@@ -3063,9 +3010,9 @@ Global Single Page Styles
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url('../img/question-mark-min.jpg') no-repeat center/cover;
+    url('../img/the-taken-card.jpg') no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/question-mark-min.jpg') no-repeat center/cover;
+    url('../img/the-taken-card.jpg') no-repeat center/cover;
   background-position: 75% 50%;
   height: 48rem;
 }
@@ -3100,55 +3047,64 @@ Global Single Page Styles
   padding: 0 1px;
 }
 
-/* 
-========================
-Killing Dreams Page
-Hero
-========================
-*/
-
-.sprit-walker-hero {
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/killing-dreams-big-min.jpg') no-repeat 50% 80% / cover;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.3)),
-      to(rgba(0, 0, 0, 0.3))
-    ),
-    url('../img/killing-dreams-big-min.jpg') no-repeat 50% 80% / cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/killing-dreams-big-min.jpg') no-repeat 50% 80% / cover;
-  height: 85vh;
+@media screen and (min-width: 350px) {
+  .sprit-box {
+    height: 40rem;
+  }
 }
 
-.sprit-walker-hero h1::after {
-  content: 'Book 1';
+@media screen and (min-width: 576px) {
+  .sprit-box {
+    height: 42rem;
+  }
+
+  .sprit-box-buried {
+    height: 48rem;
+  }
+
+  .sprit-box-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+  }
+  .sprit-box-content p:nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
 }
 
-/* .sprit-walker-hero h4 {
-  color: var(--clr-white);
-  background: var(--clr-primary-2);
-  padding: 0.3rem 1rem;
-  max-width: 300px;
-} */
+@media screen and (min-width: 992px) {
+  .sprit-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+  }
+
+  .sprit-box,
+  .sprit-box-buried {
+    height: 48rem;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .sprit-box,
+  .sprit-box-buried {
+    height: 42rem;
+  }
+}
 
 /* 
 ========================
-Killing Dreams Page
-Book Info
-========================
-*/
-.single-book-picture-killing-dreams {
-  background: url('../img/killing-dreams-small-min.jpg') no-repeat center/cover;
-  height: 30rem;
-}
-
-/* 
-========================
-Sprit Walker Single Page
-Release Info
+RELEASE INFO
+(BURIED ALIVE ONLY)
 =========================
 */
 
@@ -3182,6 +3138,82 @@ Release Info
   color: var(--clr-grey-1);
 }
 
+@media screen and (min-width: 676px) {
+  .release-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+  }
+}
+
+/* 
+=================
+Cunja Single Page
+=================
+*/
+
+/* HERO */
+.cunja-page-hero {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../img/cunja-min.jpg') no-repeat center/cover;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.3)),
+      to(rgba(0, 0, 0, 0.3))
+    ),
+    url('../img/cunja-min.jpg') no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../img/cunja-min.jpg') no-repeat center/cover;
+  height: 80vh;
+  background-position: 50% 95%;
+}
+
+.single-book-picture-cunja {
+  background: url('../img/cunja-min.jpg') no-repeat center/cover;
+  height: 30rem;
+  background-position: 50% 80%;
+}
+
+/* 
+========================
+Killing Dreams Page
+========================
+*/
+
+/* HERO */
+.sprit-walker-hero {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../img/killing-dreams-big-min.jpg') no-repeat 50% 80% / cover;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.3)),
+      to(rgba(0, 0, 0, 0.3))
+    ),
+    url('../img/killing-dreams-big-min.jpg') no-repeat 50% 80% / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../img/killing-dreams-big-min.jpg') no-repeat 50% 80% / cover;
+  height: 85vh;
+}
+
+.sprit-walker-hero h1::after {
+  content: 'Book 1';
+}
+
+/* BOOK INFO */
+.single-book-picture-killing-dreams {
+  background: url('../img/killing-dreams-small-min.jpg') no-repeat center/cover;
+  height: 30rem;
+}
+
 @media screen and (min-width: 350px) {
   .single-book-picture-killing-dreams {
     height: 35rem;
@@ -3206,81 +3238,13 @@ Release Info
   }
 }
 
-@media screen and (min-width: 676px) {
-  .release-box {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
-  }
-}
-
-/* 
-========================
-Sprit Walker Single Page
-Whole Series Section
-========================
-*/
-@media screen and (min-width: 350px) {
-  .sprit-box {
-    height: 40rem;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .sprit-box,
-  .sprit-box-b {
-    height: 42rem;
-  }
-
-  .sprit-box-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
-  }
-  .sprit-box-content p:nth-child(2) {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .sprit-center {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
-  }
-
-  .sprit-box,
-  .sprit-box-b {
-    height: 48rem;
-  }
-}
-
-@media screen and (min-width: 1170px) {
-  .sprit-box,
-  .sprit-box-b {
-    height: 42rem;
-  }
-}
-
 /* 
 =========================
 Buried Alive Single Page
 ========================
 */
+
+/* HERO */
 .buried-alive-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('../img/BuriedAlive_w16414_ib-min.jpg') no-repeat 50% 18% / cover;
@@ -3297,44 +3261,16 @@ Buried Alive Single Page
   height: 85vh;
 }
 
+/* BOOK INFO */
 .single-book-picture-buried {
   background: url('../img/BuriedAlive_w16414_ib-min.jpg') no-repeat center/cover;
-  height: 30rem;
   background-position: 50% 80%;
-}
-
-/* .buried-alive-hero h4 {
-  color: var(--clr-white);
-  background: var(--clr-primary-2);
-  padding: 0.3rem 1rem;
-  max-width: 300px;
-} */
-
-.box-date {
-  border-bottom: 1px solid var(--clr-white);
+  height: 30rem;
 }
 
 @media screen and (min-width: 450px) {
   .single-book-picture-buried {
     height: 50rem;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .sprit-box-buried {
-    height: 42rem;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .sprit-box-buried {
-    height: 48rem;
-  }
-}
-
-@media screen and (min-width: 1170px) {
-  .sprit-box-buried {
-    height: 42rem;
   }
 }
 
@@ -3344,6 +3280,7 @@ The Taken Single Page
 ========================
 */
 
+/* HERO */
 .the-taken-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('../img/the-taken-hero-min.jpg') no-repeat 50% 50% / cover;
