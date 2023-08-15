@@ -2930,6 +2930,10 @@ ALL PAGES
   margin-top: 0.5rem;
 }
 
+.fa-star {
+  color: gold;
+}
+
 .review-text .underline {
   background: var(--clr-white);
   height: 3px;
@@ -3104,7 +3108,7 @@ ALL PAGES
 /* 
 ========================
 RELEASE INFO
-(BURIED ALIVE ONLY)
+(The Taken ONLY)
 =========================
 */
 
@@ -3115,9 +3119,7 @@ RELEASE INFO
   box-shadow: 0 10px 20px var(--clr-primary-1);
 }
 
-.release-box picture {
-  display: block;
-  /* height: 22rem; */
+.release-box img {
   -o-object-fit: cover;
   object-fit: cover;
   margin: 0 auto 1rem;
