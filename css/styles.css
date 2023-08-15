@@ -2495,6 +2495,16 @@ Newsletter Tabs
   padding: 2rem 1.5rem;
 }
 
+.about-content h4 {
+  font-size: 2rem;
+  color: var(--clr-primary-2);
+}
+
+.tabs-underline {
+  margin-bottom: 2rem;
+  margin-left: 0;
+}
+
 /* hide content */
 .content {
   display: none;
@@ -2520,6 +2530,10 @@ Newsletter Tabs
   margin-bottom: 0.5rem;
 }
 
+.book-tour-img-container {
+  max-width: 700px;
+}
+
 .book-tour-text {
   margin-top: 0.7rem;
 }
@@ -2535,6 +2549,9 @@ Newsletter Tabs
   }
   .book-tour-text {
     max-width: 800px;
+  }
+  .about-content h4 {
+    font-size: 4rem;
   }
 }
 
