@@ -1792,7 +1792,7 @@ Hero
 
 .book-sub-heading {
   position: relative;
-  z-index: 3;
+  z-index: 1;
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
