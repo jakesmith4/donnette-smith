@@ -2559,17 +2559,13 @@ Newsletter Tabs
 }
 
 /* 
-==============
-Blog Page
-Hero
-==============
+=================
+COMING SOON PAGE
+=================
 */
-.blog-hero .underline {
-  margin-bottom: 0.5rem;
-  margin-left: 0;
-}
 
-.blog-hero {
+/* HERO */
+.coming-soon-hero {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('../img/comming-soon-bcg.jpg') no-repeat center/cover;
   background: -webkit-gradient(
@@ -2586,57 +2582,51 @@ Hero
 }
 
 @media screen and (min-width: 576px) {
-  .blog-hero {
+  .coming-soon-hero {
     height: 80vh;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .blog-hero {
+  .coming-soon-hero {
     height: 100vh;
   }
 }
 
-/* 
-===============
-Blog Page
-Blog Intro
-===============
-*/
-.blog-intro-img img {
-  height: 300px;
+/* UPCOMING BOOKS */
+.upcoming-books-img {
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: var(--radius);
   border: 4px solid var(--clr-primary-2);
 }
 
-.blog-intro-info h3 {
+.upcoming-books-info h3 {
   margin-top: 1rem;
   font-style: italic;
 }
 
-.blog-intro-info .underline {
+.upcoming-books-info .underline {
   margin: 0 0 1.25rem 0;
   height: 0.17rem;
 }
 
-.blog-intro-info p {
+.upcoming-books-info p {
   letter-spacing: 1px;
 }
 
-.newsletter-page-link {
-  text-decoration: underline;
+.upcoming-books-info .book-btn {
+  background: var(--clr-primary-2);
 }
 
 @media screen and (min-width: 576px) {
-  .blog-intro-img img {
+  .upcoming-books-img {
     height: 400px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .blog-intro-center {
+  .upcoming-books-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     -webkit-box-align: center;
@@ -2647,139 +2637,8 @@ Blog Intro
     column-gap: 2rem;
   }
 
-  .blog-intro-img img {
-    height: 500px;
-  }
-}
-
-/* 
-===============
-Blog Post Page
-Hero
-===============
-*/
-.hero .underline {
-  margin-bottom: 0.5rem;
-  margin-left: 0;
-}
-
-.blog-post-hero {
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/emotions-hero-min.jpg') no-repeat center/cover;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.3)),
-      to(rgba(0, 0, 0, 0.3))
-    ),
-    url('../img/emotions-hero-min.jpg') no-repeat center/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/emotions-hero-min.jpg') no-repeat center/cover;
-  background-position: 50% 70%;
-  height: 75vh;
-}
-
-.blog-post-hero .underline {
-  margin-left: 0;
-}
-
-.blog-post-hero h1 {
-  color: var(--clr-white);
-  font-style: italic;
-}
-
-.blog-post-hero h4 {
-  color: var(--clr-white);
-  background: var(--clr-primary-2);
-  padding: 0.3rem 1rem;
-  max-width: 250px;
-  font-size: 1.3rem;
-}
-
-/* 
-==============
-Blog Post Page
-Single Post
-==============
-*/
-.post-author-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0.5rem;
-}
-
-.post-author-info i {
-  margin-right: 0.3rem;
-}
-
-.post-author-info p {
-  text-transform: capitalize;
-  margin-right: 0.3rem;
-}
-
-.post-img {
-  width: 50%;
-  margin: 0.5rem auto 1rem;
-  border-radius: 50%;
-  border: 2px solid var(--clr-primary-2);
-}
-
-.post-center .section-title {
-  margin-bottom: 0;
-}
-
-.post-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.post-p {
-  margin: 1rem auto;
-  letter-spacing: 1px;
-}
-
-.blog-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.blog-links a {
-  display: inline-block;
-  margin-right: 2rem;
-  padding: 0.1rem 0.5rem;
-  text-transform: capitalize;
-  background: var(--clr-primary-2);
-  color: var(--clr-white);
-  letter-spacing: 1px;
-  border: 2px solid transparent;
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-  text-align: center;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
-}
-
-.blog-links a:hover {
-  border-color: var(--clr-white);
-}
-
-@media screen and (min-width: 768px) {
-  .post-img {
-    width: 30%;
-  }
-
-  .blog-links a {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%;
+  .upcoming-books-img {
+    height: 350px;
   }
 }
 
@@ -3323,3 +3182,9 @@ The Taken Single Page
   background: url('../img/the-taken-card.jpg') no-repeat center/cover;
   height: 50rem;
 }
+
+/* 
+================
+COMING SOON PAGE
+================
+ */
