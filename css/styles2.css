@@ -2619,12 +2619,6 @@ COMING SOON PAGE
   background: var(--clr-primary-2);
 }
 
-@media screen and (min-width: 576px) {
-  .upcoming-books-img {
-    height: 400px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .upcoming-books-center {
     display: grid;
@@ -2981,54 +2975,6 @@ ALL PAGES
   .sprit-box,
   .sprit-box-buried {
     height: 42rem;
-  }
-}
-
-/* 
-========================
-RELEASE INFO
-(The Taken ONLY)
-=========================
-*/
-
-.release-box {
-  background: var(--clr-primary-2);
-  padding: 2rem;
-  -webkit-box-shadow: 0 10px 20px var(--clr-primary-1);
-  box-shadow: 0 10px 20px var(--clr-primary-1);
-}
-
-.release-box img {
-  -o-object-fit: cover;
-  object-fit: cover;
-  margin: 0 auto 1rem;
-  border: 2px solid var(--clr-white);
-}
-
-.release-box-info h3 {
-  text-align: center;
-}
-
-.release-box-info .underline {
-  background: var(--clr-white);
-  height: 3px;
-}
-
-.release-box-info p {
-  letter-spacing: 1px;
-  color: var(--clr-grey-1);
-}
-
-@media screen and (min-width: 676px) {
-  .release-box {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
   }
 }
 
